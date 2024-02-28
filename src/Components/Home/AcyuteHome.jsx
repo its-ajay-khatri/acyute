@@ -225,7 +225,7 @@ const AcyuteHome = () => {
                               </div>
                           </div>
                           <div className="home-page-top-video-section">
-                            <TextWithCircle paraId="1" leftSectionText="We Ellevate Your Business to the Next Level with Cutting-Edge Technology." CircleLink="contact-us" CircleText='Contact us'  />    
+                            <TextWithCircle paraId="1" leftSectionText="We Ellevate Your Business to the Next Level with Cutting-Edge Technology." CircleLink="contact" CircleText='Contact us'  />    
                           </div>                            
                           <div className="homepage-full-width-video-section">
                               <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
@@ -250,12 +250,12 @@ const AcyuteHome = () => {
                           </section>
 
                           <div className="home-middle-text-with-circle-section">
-                            <TextWithCircle paraId="3" leftSectionText="We're eager to take on the challenges you present to us! Please go ahead and provide us with your project specifications." CircleLink="contact-us" CircleText='Start your project'  />                 
+                            <TextWithCircle paraId="3" leftSectionText="We're eager to take on the challenges you present to us! Please go ahead and provide us with your project specifications." CircleLink="start-a-project" CircleText='Start your project'  />                 
                           </div>
  
                             <PortfolioSlider />
                           <div className="home-bottom-text-with-cicle-section">
-                            <TextWithCircle paraId="4" leftSectionText="Have Question? We got you" CircleLink="contact-us" CircleText='Leave Inquiry'  />
+                            <TextWithCircle paraId="4" leftSectionText="Have Question? We got you" CircleLink="contact" CircleText='Leave Inquiry'  />
                             </div>
                           </div>
                     </div>

@@ -26,15 +26,17 @@ const DatabaseMangement = () => {
                             superior database management services" />
                        </div>
                        <div className="db-management-middle-section">
-                       <div className="it-consultancy-strategy-section-row"><QuestionAnswer
-                            paraId={4}
-                            outerDivClass="web-development-strategy-section-row"
-                            firstParaClass="strategy-section-heading"
-                            firstParaText="Database Design and Modeling"
-                            secondParaClass="strategy-section-subtitle"
-                            secondParaText="We specialize in creating database structures, including designing tables, relationships, 
-                            and data models that effectively represent and organize your data."
-                        /></div>
+                            <div className="it-consultancy-strategy-section-row">
+                                <QuestionAnswer
+                                    paraId={4}
+                                    outerDivClass="web-development-strategy-section-row"
+                                    firstParaClass="strategy-section-heading"
+                                    firstParaText="Database Design and Modeling"
+                                    secondParaClass="strategy-section-subtitle"
+                                    secondParaText="We specialize in creating database structures, including designing tables, relationships, 
+                                    and data models that effectively represent and organize your data."
+                                />
+                            </div>
 
                        </div>
                         <div className="db-management-text-video-section">
@@ -179,7 +181,7 @@ fix bugs and vulnerabilities."
                         </div>
                         <TextWithCircle paraId="21" leftSectionText="If you've got an idea, feel free to drop by and
                             discuss it with us to discover the ways we can
-                            assist you in bringing it to life." CircleText="Contact us" CircleLink="contact-us" LeaveARequestText="" />
+                            assist you in bringing it to life." CircleText="Contact us" CircleLink="contact" LeaveARequestText="" />
                         <FooterComponent />
                     </>
                 }

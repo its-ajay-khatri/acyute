@@ -63,7 +63,7 @@ const About = () => {
                         <TextLeftNonBold paraId="7" classNameText="section-lineUp2" paraText="Acyute – Empowering Your Digital Journey with Excellence" />
                     </div>
                     <div className="about-section-text-with-cicle-section">
-                        <TextWithCircle paraId="8" leftSectionText="If you've got an idea, feel free to drop by and discuss it with us to discover the ways we can assist you in bringing it to life" CircleLink="networking" CircleText='Contact us' LeaveARequestText="" />   
+                        <TextWithCircle paraId="8" leftSectionText="If you've got an idea, feel free to drop by and discuss it with us to discover the ways we can assist you in bringing it to life" CircleLink="contact" CircleText='Contact us' LeaveARequestText="" />   
                     </div>
                     <FooterComponent />
                 </> }

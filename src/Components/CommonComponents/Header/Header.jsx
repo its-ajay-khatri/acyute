@@ -80,11 +80,11 @@ const Header = ({showMenuPopup, setShowMenuPopup}) => {
                                         <span>Our Projects</span>
                                     </span>
                                  </Link>
-                                    <a href="/contact" className="menu__item" style={{pointerEvents:'all'}}>
+                                 <Link to="/contact" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
                                         <span>Contact Us</span>
                                     </span>
-                                    </a>
+                                 </Link>
                                 </div>
                                 </div>
                             </div>

@@ -203,7 +203,7 @@ const WebDevelopment = () => {
                                 <div className="web-development-text-with-circle">
                                     <TextWithCircle paraId="21" leftSectionText="If you've got an idea, feel free to drop by and 
                                         discuss it with us to discover the ways we can 
-                                        assist you in bringing it to life." CircleLink="contact-us" CircleText='Contact us' />   
+                                        assist you in bringing it to life." CircleLink="contact" CircleText='Contact us' />   
                                 </div>
                                 <FooterComponent />
                     </>

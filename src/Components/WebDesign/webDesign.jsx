@@ -141,7 +141,7 @@ const WebDesign = () => {
                             <div className="web-design-text-with-circle-section">
                             <TextWithCircle paraId="19" leftSectionText="If you've got an idea, feel free to drop by and 
                             discuss it with us to discover the ways we can 
-                            assist you in bringing it to life." CircleLink="contact-us" CircleText='Contact us' LeaveARequestText="" />
+                            assist you in bringing it to life." CircleLink="contact" CircleText='Contact us' LeaveARequestText="" />
                             </div>
                         </div>
                         <FooterComponent />
