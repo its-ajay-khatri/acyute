@@ -120,7 +120,7 @@ const Services = () => {
                                     </Link>
                                     
                                     
-                                    <Link to='/database-development' className="fifty-fifty-right-container">
+                                    <Link to='/database-management' className="fifty-fifty-right-container">
                                         <div className="fifty-fifty-left-container">
                                             <p className="Service-name-heading">
                                                 Database Development

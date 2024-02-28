@@ -1,10 +1,15 @@
 import React from "react";
+import './404Page.css';
 
 const ErrorPage = () => {
     return(
         <>
-            <h1>404</h1>
-            <h3>Oops!, the page you re looking for, is not found</h3>
+            <div className="an-404-page-outer-cntainer">
+                <div className="not-found-container">
+                    <h1 className="not-found-title">404</h1>
+                    <p className="not-found-message">OOPS, the page you are looking for is not found.</p>
+                </div>
+            </div>
         </>
     )
 }

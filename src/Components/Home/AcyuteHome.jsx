@@ -11,6 +11,7 @@ import Header from "../CommonComponents/Header/Header";
 import Loading from "../Loading/Loading";
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import TextLeftNonBold from "../CommonComponents/TextLeftNonBold/TextLeftNonBold";
+import PortfolioSlider from "./PortfolioSlider";
 
 const AcyuteHome = () => {
 
@@ -161,6 +162,9 @@ const AcyuteHome = () => {
         doCooldown();
       }, [showMenuPopup])
 
+      // useEffect(() => {
+      //   console.log("okok", window.scrollY)
+      // }, [window.scrollY])
 
     return(
         <>
@@ -184,10 +188,10 @@ const AcyuteHome = () => {
                     </svg>
                     </div>
                     <div className="content" data-router-wrapper role="document">
-                    <div data-router-view="home">
-                        <div className="home">
-                            <div className="home-page-outer-container">
-                                <div className="home-page-banner-section">
+                      <div data-router-view="home">
+                        <div className="home" nestedScrollEnabled={true}>
+                          <div className="home-page-outer-container">
+                              <div className="home-page-banner-section">
                                     <div className="home-section-background-image"></div>
                                     <div className="bigger-text-section">
                                         <div className="bigger-text-section" style={bannerStyle}>
@@ -218,43 +222,42 @@ const AcyuteHome = () => {
                                             </>
                                         
                                     </div>
-                                </div>
-                            </div>
-                        <div className="home-page-top-video-section">
-                          <TextWithCircle paraId="1" leftSectionText="We Ellevate Your Business to the Next Level with Cutting-Edge Technology." CircleLink="contact-us" CircleText='Contact us'  />    
-                        </div>                            
-                        <div className="homepage-full-width-video-section">
-                            <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
-                        </div>
+                              </div>
+                          </div>
+                          <div className="home-page-top-video-section">
+                            <TextWithCircle paraId="1" leftSectionText="We Ellevate Your Business to the Next Level with Cutting-Edge Technology." CircleLink="contact-us" CircleText='Contact us'  />    
+                          </div>                            
+                          <div className="homepage-full-width-video-section">
+                              <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                          </div>
 
-                        <section
-                            className="b-sentence u-margin"
-                            id="sentence"
-                            >
-                            <div className="home-section-background-image"></div>
-                            <div className="b-sentence__sticky">
-                                <div className="container-fluid">
-                                <div className="row justify-content-center">
-                                    <div className="col-md-20 col-xl-16">
-                                    <h2 className="b-sentence__text ">
-                                        <TextLeftNonBold paraId="2" classNameText="section-lineUp2" paraText="Join us on this journey of digital excellence. Let Acyute be the architect of your digital future, where your vision is our blueprint, and your success is our mission." />
-                                    </h2>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </section>
+                          <section
+                              className="b-sentence u-margin"
+                              id="sentence"
+                              >
+                              <div className="home-section-background-image"></div>
+                              <div className="b-sentence__sticky">
+                                  <div className="container-fluid">
+                                  <div className="row justify-content-center">
+                                      <div className="col-md-20 col-xl-16">
+                                      <h2 className="b-sentence__text ">
+                                          <TextLeftNonBold paraId="2" classNameText="section-lineUp2" paraText="Join us on this journey of digital excellence. Let Acyute be the architect of your digital future, where your vision is our blueprint, and your success is our mission." />
+                                      </h2>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </section>
 
-                        <div className="home-middle-text-with-circle-section">
-                          <TextWithCircle paraId="3" leftSectionText="We're eager to take on the challenges you present to us! Please go ahead and provide us with your project specifications." CircleLink="contact-us" CircleText='Start your project'  />                 
-                        </div>
-                            
-                        {/* <PortfolioSlider /> */}
-
-                            <div className="home-bottom-text-with-cicle-section">
+                          <div className="home-middle-text-with-circle-section">
+                            <TextWithCircle paraId="3" leftSectionText="We're eager to take on the challenges you present to us! Please go ahead and provide us with your project specifications." CircleLink="contact-us" CircleText='Start your project'  />                 
+                          </div>
+ 
+                            <PortfolioSlider />
+                          <div className="home-bottom-text-with-cicle-section">
                             <TextWithCircle paraId="4" leftSectionText="Have Question? We got you" CircleLink="contact-us" CircleText='Leave Inquiry'  />
                             </div>
-                        </div>
+                          </div>
                     </div>
                     </div>
                     <FooterComponent />

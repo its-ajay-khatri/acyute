@@ -1,0 +1,73 @@
+.an-404-page-outer-cntainer {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0f1011;
+    color: white;
+  }
+  
+  .not-found-title {
+    font-size: 10em;
+    padding: 50px;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .not-found-message {
+    font-size: 1.5em;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 768px) {
+    .not-found-title {
+      font-size: 7em;
+      padding: 30px;
+    }
+  
+    .not-found-message {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .not-found-title {
+      font-size: 7em;
+      padding: 30px;
+    }
+  
+    .not-found-message {
+      font-size: 1em;
+    }
+  }

@@ -240,6 +240,11 @@ color: white;
   font-family: Montserrat;
 }
 
+.portfolio-slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .home-bottom-text-with-cicle-section .about-you{
   text-align: center;
 }
