@@ -1,0 +1,78 @@
+
+
+.db-management-text-video-section{
+    box-sizing: border-box;
+    padding: 0em 10em;
+    background-color: #090909;
+    color: white;
+    font-family: Montserrat;
+}
+
+.db-management-middle-section{
+  padding: 0em 10em;
+}
+
+.db-management-text-video-container {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .db-management-text-video-left-section {
+    width: 60%;
+    font-size: 1.1em;
+  }
+
+  .db-management-text-video-right-section {
+    width: 40%;
+    padding: 4em 4em 4em 0em;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .db-management-text-video-left-section p {
+    margin-bottom: 20px;
+  }
+
+  .db-management-text-video-right-section p {
+    width: 100%;
+    padding: 45% 40%;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+  }
+
+.db-management-bottom-big-text-section{
+  width: 60%;
+}
+
+.db-management-heading{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 !important;
+  line-height: 0;
+  margin-top: 2em;
+}
+
+.db-management-subheading{
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.it-consultancy-strategy-section-row{
+  font-family: Montserrat;
+}
+
+.db-management-bottom-section{
+  padding-bottom: 10em;
+}
+
+
+
+

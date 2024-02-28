@@ -1,0 +1,119 @@
+.software-development-outer-container{
+    background-color: #090909;
+    line-height: 2.3em !important;
+}
+
+.web-development-strategy-section-container{
+    padding: 3em 8em 0em 8em;
+    font-family: Montserrat;
+}
+
+.web-development-text-video-section{
+    box-sizing: border-box;
+    /* padding: 2em 0em; */
+    background-color: #090909;
+    color: white;
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.web-development-video-left-40-text-right-60{
+    padding: 5em 0em;
+}
+
+.web-development-bottom-big-text-section {
+    width: 80%;
+}
+
+.software-development-outer-container .center-text-bold-section {
+    text-align: left;
+    padding: 0em 2em 0em 4em;
+}
+
+.web-development-strategy-section-row {
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.web-development-text-video-container {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .web-development-text-video-left-section {
+    width: 60%;
+    font-size: 1.1em;
+  }
+
+  .web-development-text-video-right-section {
+    width: 40%;
+    padding: 2em;
+    margin-right: 2em;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-development-text-video-left-section p {
+    margin-bottom: 20px;
+  }
+
+  .web-development-text-video-right-section p {
+    width: 100%;
+    padding: 40% 30%;
+    background-color: white;
+    border-radius: 10%;
+    color: black;
+}
+
+.it-consultancy-fifty-fifty-section{
+    /* padding: 2em 0em; */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifty-fifty-left-container{
+    padding: 0em 2.5em 1em 0em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.fifty-fifty-right-container{
+    padding: 0em 0em 1em 2.5em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.web-development-strategy-section-container .center-text-bold-section{
+    text-align: left !important;
+    padding: 0em;
+}
+
+.web-development-strategy-section-container section.b-content-button.u-margin {
+    margin: 2em;
+} 
+
+.software-development-outer-container .text-center-non-bold{
+    padding: 2em 3em !important;
+    text-align: left !important;
+    line-height: 1.3 !important;
+}
+
+.software-development-outer-container .center-text-bold-section p {
+    padding: 4em 2em 4em 0em;
+    line-height: 1.1em;
+    line-height: 1.3;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.web-development-text-with-circle {
+    padding: 0em 7em 0em 2em;
+}

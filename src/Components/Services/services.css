@@ -1,0 +1,68 @@
+.services-outer-container header.header {
+    position: relative;
+}
+
+
+.web-development-strategy-section-container{
+    padding: 3em 12em 6em 12em;
+    font-family: Montserrat;
+}
+
+.it-consultancy-fifty-fifty-section{
+    /* padding: 2em 0em; */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifty-fifty-left-container{
+    padding: 2em 3em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.fifty-fifty-right-container{
+    padding: 0em 0em 1em 2.5em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.web-development-strategy-section-container .center-text-bold-section{
+    text-align: left !important;
+    padding: 0em;
+}
+
+.web-development-strategy-section-container section.b-content-button.u-margin {
+    margin: 2em;
+} 
+
+.services-heading {
+    font-size: 72px;
+    text-align: center;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-weight: 500;
+    /* padding: 2em; */
+}
+
+.services-heading-section {
+    padding: 3em;
+}
+
+p.Service-name-heading {
+    font-size: 48px;
+    font-weight: 500;
+    display: inline;
+    color: #ffffff;
+    font-family: Montserrat;
+    border-bottom: 1px solid #99999a;
+}
+
+p.Service-name-description {
+    font-weight: 300;
+    font-size: 30px;
+    font-family: Montserrat;
+    color: #99999a;
+}

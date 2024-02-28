@@ -1,0 +1,25 @@
+.top-video-outer-section {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.top-video-page-video-section{
+    height: 100vh;
+    margin: 7% 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: transparent;
+}
+
+.top-video-page-video-section p {
+    /* padding: 19em 43em; */
+    padding: 30% 50%;
+    color: black;
+    /* background-color: green; */
+
+    border-radius: 5em;
+}

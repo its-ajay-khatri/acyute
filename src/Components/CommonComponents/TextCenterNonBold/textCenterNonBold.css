@@ -1,0 +1,9 @@
+.text-center-non-bold{
+    background-color: #090909;
+    padding: 2em 4em;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-family: Montserrat;
+}

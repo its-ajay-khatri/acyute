@@ -1,0 +1,73 @@
+.web-design-main-container{
+    background-color: #090909;
+    line-height: 2.3em !important;  
+}
+
+.web-design-welcome-text-section{
+    height: 100%;
+    padding: 2em 6em;
+    background-color: #090909;
+    color: white;
+    font-family: Montserrat;
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.web-design-strategy-section-container{
+    padding: 3em 4em 0em 8em;
+    font-family: Montserrat;
+}
+
+.web-design-text-video-section{
+    box-sizing: border-box;
+    padding: 2em 6em;
+    background-color: #090909;
+    color: white;
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.web-design-bottom-big-text-section {
+    width: 80%;
+}
+
+.web-design-text-video-container {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .web-design-text-video-left-section {
+    width: 60%;
+    font-size: 1.1em;
+  }
+
+  .web-design-text-video-right-section {
+    width: 40%;
+    padding: 2em;
+    margin-right: 2em;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-design-text-video-right-section p {
+    width: 100%;
+    padding: 75% 30%;
+    background-color: white;
+    border-radius: 10%;
+    color: black;
+}
+
+.web-design-video-section {
+    padding: 2em 4.5em;
+}
+
+.web-design-text-with-circle-section {
+    margin-top: 15em;
+}
+
