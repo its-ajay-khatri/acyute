@@ -5,7 +5,7 @@
 
 .web-design-welcome-text-section{
     height: 100%;
-    padding: 2em 6em;
+    padding: 2em 4em;
     background-color: #090909;
     color: white;
     font-family: Montserrat;
@@ -21,7 +21,7 @@
 
 .web-design-text-video-section{
     box-sizing: border-box;
-    padding: 2em 6em;
+    /* padding: 2em 6em; */
     background-color: #090909;
     color: white;
     font-family: Montserrat;
@@ -71,3 +71,84 @@
     margin-top: 15em;
 }
 
+.web-design-video-section .row{
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) and (max-width:1299px) {
+    .web-design-welcome-text-section{
+        padding: 2em 2.5em;
+        font-size: 20px;
+    }
+
+    .web-design-strategy-section-container{
+        padding: 2em 3em;
+    }
+
+    .web-design-text-video-section{
+        padding: 0;
+    }
+    
+    .strategy-section-heading{
+        font-size: 20px !important;
+        margin-top: 0.5em;
+    }
+
+    .strategy-section-subtitle{
+        font-size: 17px !important;
+    }
+
+    .web-design-text-video-right-section{
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .web-design-video-section{
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .web-design-welcome-text-section{
+        padding: 2em 2.5em;
+        font-size: 20px;
+    }
+
+    .web-design-strategy-section-container{
+        padding: 2em 3em;
+    }
+
+    .web-design-text-video-section{
+        padding: 0;
+    }
+    
+    .strategy-section-heading{
+        font-size: 20px !important;
+        margin-top: 0.5em;
+    }
+
+    .web-design-bottom-big-text-section, .web-design-text-video-right-section{
+        width: 100%;
+    }
+
+    .web-design-text-video-container{
+        flex-direction: column;
+    }
+
+    .web-design-text-video-right-section{
+        margin: 2em 0em;
+    }
+
+    .strategy-section-subtitle{
+        font-size: 17px !important;
+    }
+
+    .web-design-text-video-right-section{
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .web-design-video-section{
+        padding: 2em;
+    }
+}

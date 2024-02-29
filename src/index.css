@@ -10,5 +10,15 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  Montserrat;
+}
+
+@media screen and (max-width:500px) {
+  div#root {
+    overflow: auto;
+}
+
+  /* .top-video-outer-section{
+    width: 200% !important;
+  } */
 }

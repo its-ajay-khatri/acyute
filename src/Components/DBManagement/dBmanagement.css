@@ -50,6 +50,10 @@
   width: 60%;
 }
 
+.db-management-section-main-container .center-text-bold-section p{
+  line-height: 1.1;
+}
+
 .db-management-heading{
   font-weight: bold;
   font-size: 15px;
@@ -73,6 +77,53 @@
   padding-bottom: 10em;
 }
 
+@media screen and (min-width: 768px) and (max-width:1299px){
+  .db-management-section-main-container .text-center-non-bold{
+    padding: 1em 1.5em;
+    font-size: 25px;
+  }
 
+  .db-management-middle-section {
+    padding: 0em 3em;
+  }
+
+  .db-management-text-video-section{
+    padding: 0em 3em 3em 3em;
+  }
+
+  .db-management-section-main-container .center-text-bold-section p{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width:767px){
+  .db-management-section-main-container .text-center-non-bold{
+    padding: 1em;
+  }
+
+  .db-management-middle-section {
+    padding: 0em 2em;
+  }
+
+  .db-management-text-video-section{
+    padding: 0em 2em 3em 2em;
+  }
+
+  .db-management-text-video-container{
+    display: block;
+  }
+
+  .db-management-text-video-left-section, .db-management-bottom-big-text-section, .db-management-text-video-right-section{
+    width: 100%;
+  }
+
+  .db-management-section-main-container .center-text-bold-section{
+    padding: 1.5em;
+  }
+
+  .db-management-section-main-container .center-text-bold-section p{
+    font-size: 17px;
+  }
+}
 
 

@@ -4,15 +4,23 @@
 }
 
 .it-consultancy-strategy-section-container{
-    padding: 3em 8em;
+    padding: 3em 4em;
     font-family: Montserrat;
 }
 
-.it-consultancy-strategy-section-row {
-    padding: 0;
+.it-consulting-main-container div#textLeft1 {
+    padding: 2.8em;
+}
+
+.it-consulting-main-container .it-consultancy-strategy-section-row {
+    padding: 0em 3em;
     margin: 0;
     line-height: 1.3;
 }
+
+.it-consulting-main-container .db-management-middle-section {
+    padding: 0em 3em;
+  }
 
 .strategy-section-heading{
     font-weight: 600;
@@ -130,4 +138,93 @@ p.strategy-section-subtitle {
 
 .it-consultancy-text-with-circle-section{
     padding: 2em 4em 4em 2em;
+}
+
+@media screen and (min-width: 768px) and (max-width:1299px) {
+    .it-consulting-main-container .text-center-non-bold{
+        padding: 1em 2em;
+    }
+
+    .it-consulting-main-container .text-center-non-bold p{
+        padding: 20px;
+    }
+
+    .it-consulting-main-container div#textLeft1 {
+        padding: 1em 1.5em;
+    }
+
+    .it-consulting-main-container .it-consultancy-fifty-fifty-section{
+        padding: 0em 2em;
+    }
+
+
+    .it-consultancy-strategy-section-container{
+        padding: 2em 2.5em;
+    }
+
+    .it-consultancy-text-video-section{
+        padding: 2em 1em 2em 0em;
+    }
+
+    .it-consultancy-text-video-right-section{
+        margin-right: 0;
+        padding: 2em 1em 2em 0em;
+    }
+
+    .it-consultancy-bold-section .center-text-bold-section{
+        padding: 1em 2em;
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .it-consultancy-fifty-fifty-section .fifty-fifty-right-container{
+        padding-left: 1em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .it-consulting-main-container .text-center-non-bold{
+        padding: 1em 1em;
+    }
+
+    .it-consultancy-strategy-section-container{
+        padding: 2em 1em;
+    }
+
+    .it-consulting-main-container div#textLeft1 {
+        padding: 1em;
+    }
+
+    .it-consulting-main-container .it-consultancy-fifty-fifty-section{
+        padding: 0em 2em;
+    }
+
+    /* .it-consultancy-text-video-section{
+        padding: 2em 1em 2em 0em;
+    } */
+
+    .it-consultancy-text-video-right-section{
+        margin-right: 0;
+        padding: 2em 1em 2em 0em;
+    }
+    
+    .it-consultancy-text-video-section{
+        padding: 2em 0em 0em 0em;
+    }
+
+    .it-consultancy-bold-section .center-text-bold-section{
+        padding: 2.5em;
+        font-size: 17px;
+        line-height: 1.3;
+    }
+    .it-consultancy-text-video-container{
+        display: block;
+    }
+    .it-consultancy-text-video-right-section{
+        width: 100%;
+    }
+
+    .it-consultancy-bottom-big-text-section{
+        width: 100%;
+    }
 }

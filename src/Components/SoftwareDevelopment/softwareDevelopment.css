@@ -4,7 +4,7 @@
 }
 
 .web-development-strategy-section-container{
-    padding: 3em 8em 0em 8em;
+    padding: 3em 7em 0em 7em;
     font-family: Montserrat;
 }
 
@@ -116,4 +116,99 @@
 
 .web-development-text-with-circle {
     padding: 0em 7em 0em 2em;
+}
+
+@media screen and (min-width:1024px) and (max-width:1299px) {
+
+    .software-development-outer-container .center-text-bold-section {
+
+        padding: 0em 2em;
+        font-size: 30px;
+    }
+
+    .software-development-outer-container .center-text-bold-section p{
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .software-development-outer-container .text-center-non-bold {
+        padding: 2.5em 3.5em !important;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .software-development-outer-container .text-center-non-bold {
+        padding: 1em 1.8em !important;
+    }
+
+    .web-development-text-video-right-section{
+        margin-right: 0;
+    }
+
+    .web-development-strategy-section-container {
+        padding: 1em 4em 3em 4em !important;
+    }
+
+    .software-development-outer-container .it-consultancy-fifty-fifty-section .fifty-fifty-right-container{
+        padding: 0;
+    }
+
+    .software-development-outer-container .center-text-bold-section {
+
+        padding: 0em 2em;
+        font-size: 17px;
+    }
+
+    .software-development-outer-container .center-text-bold-section p{
+        padding: 0;
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .software-development-outer-container .text-center-non-bold {
+        padding: 1em !important;
+    }
+
+    .web-development-text-video-right-section{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .software-development-outer-container .it-consultancy-fifty-fifty-section .fifty-fifty-right-container{
+        padding: 0;
+    }
+
+    .software-development-outer-container .center-text-bold-section {
+
+        padding: 0em 2em;
+        font-size: 17px;
+    }
+
+    .web-development-text-video-container {
+        display: block;
+    }
+
+    .web-development-strategy-section-container{
+        padding: 2em;
+    }
+
+    .web-development-video-left-40-text-right-60 {
+        padding-top: 5em;
+    }
+
+    .software-development-outer-container .center-text-bold-section p{
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .web-development-bottom-big-text-section{
+        width: 100%;
+    }
+
+    .web-development-text-video-right-section{
+        padding: 2em 0em;
+    }
 }

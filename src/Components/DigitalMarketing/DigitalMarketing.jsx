@@ -32,7 +32,7 @@ const DigitalMarketing = () => {
                                     secondParaText="Elevate your online visibility with our expert SEO strategies. We focus on enhancing your website's search engine rankings, driving 
 targeted traffic, and establishing your brand as a leading authority in your industry."
                                 />
-                                <div style={{width:'95%'}} >
+                                <div className="digital-marketing-second-questionAnswer">
                                     <QuestionAnswer
                                         paraId={5}
                                         outerDivClass="web-development-strategy-section-row"
@@ -43,7 +43,7 @@ targeted traffic, and establishing your brand as a leading authority in your ind
 fostering community interactions, we build a dynamic social media presence tailored to your audience."
                                     />
                                 </div>
-                                <div style={{width:'85%'}}>
+                                <div className="digital-marketing-third-questionAnswer">
                                     <QuestionAnswer
                                         paraId={6}
                                         outerDivClass="web-development-strategy-section-row"
@@ -54,7 +54,7 @@ fostering community interactions, we build a dynamic social media presence tailo
 data-driven precision to optimize ad spending and maximize ROI."
                                     />
                                 </div>
-                                <div style={{width:'80%'}} >
+                                <div className="digital-marketing-fourth-questionAnswer">
                                     <QuestionAnswer
                                         paraId={7}
                                         outerDivClass="web-development-strategy-section-row"
@@ -65,7 +65,7 @@ data-driven precision to optimize ad spending and maximize ROI."
 newsletters and automated campaigns, ensuring timely and relevant communication with your audience."
                                     />
                                 </div>
-                                <div style={{width:'70%'}}>
+                                <div className="digital-marketing-fifth-questionAnswer">
                                     <QuestionAnswer
                                         paraId={8}
                                         outerDivClass="web-development-strategy-section-row"
@@ -77,7 +77,7 @@ analysis of your campaigns' performance, enabling informed decision-making and c
 strategy refinement."
                                     />
                                 </div>
-                                <div style={{width:'65%'}}>
+                                <div className="digital-marketing-sixth-questionAnswer">
                                     <QuestionAnswer
                                         paraId={9}
                                         outerDivClass="web-development-strategy-section-row"
@@ -89,7 +89,7 @@ Our offerings include blog posts, videos, infographics, eBooks, and more tailore
 your brand's voice and audience's interests."
                                     />
                                 </div>
-                                <div style={{width:'65%'}}>
+                                <div className="digital-marketing-sixth-questionAnswer">
                                     <QuestionAnswer
                                         paraId={10}
                                         outerDivClass="web-development-strategy-section-row"

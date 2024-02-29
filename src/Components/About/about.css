@@ -17,7 +17,7 @@
 
 .about-text-video-section{
     box-sizing: border-box;
-    padding: 2em 8em;
+    padding: 2em 7em;
     background-color: #090909;
     color: white;
     font-family: Montserrat;
@@ -41,7 +41,7 @@
   .about-text-video-right-section {
     width: 40%;
     padding: 20px;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,4 +158,92 @@
 
 .about-section-text-with-cicle-section .e-cta{
   border:1px solid white
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+  .about-section-main-container{
+    width: 100%;
+  }
+
+  .about-welcome-text-section{
+    padding: 1em 1.5em;
+  }
+
+  .about-welcome-text-section p{
+    font-size: 20px;
+  }
+
+  .about-text-video-section{
+    padding: 1em 1.5em;
+  }
+
+  .about-text-video-left-section p{
+    font-size: 17px;
+  }
+
+  .about-text-video-right-section p{
+    padding: 10em 2em;
+  }
+
+  .about-text-video-right-section{
+    height: 100%;
+  }
+
+  .about-section-bold-text{
+    padding: 1em 1.5em;
+  }
+
+  .about-section-bold-text p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-section-main-container{
+    width: 100%;
+  }
+
+  .about-welcome-text-section{
+    padding: 1em;
+  }
+
+  .about-welcome-text-section p{
+    font-size: 17px;
+  }
+
+  .about-text-video-section{
+    padding: 1em 2em;
+  }
+
+  .about-text-video-container{
+    flex-direction: column;
+  }
+
+  .about-text-video-left-section{
+    width: 100%;
+  }
+  .about-text-video-right-section{
+    width: 100%;
+  }
+
+  .about-text-video-left-section p{
+    font-size: 15px;
+  }
+
+  .about-text-video-right-section p{
+    padding: 10em 2em;
+  }
+
+  .about-text-video-right-section{
+    height: 100%;
+  }
+
+  .about-section-bold-text{
+    padding: 1em;
+  }
+
+  .about-section-bold-text p{
+    font-size: 17px;
+  }
 }

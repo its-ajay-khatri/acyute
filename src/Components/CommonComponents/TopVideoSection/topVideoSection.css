@@ -5,8 +5,8 @@
 }
 
 .top-video-page-video-section{
-    height: 100vh;
-    margin: 7% 3%;
+    height: 100%;
+    margin: 3%;
 
     display: flex;
     justify-content: center;

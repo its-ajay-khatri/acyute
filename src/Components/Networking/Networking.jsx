@@ -35,7 +35,7 @@ how we provide unparalleled networking services." />
                                         <div class="networking-text-video-right-section first-video-section section-zoomIn">
                                             <p>video</p>
                                         </div>   
-                                        <div class="networking-bottom-big-text-section section-zoomIn">
+                                        <div class="networking-bottom-big-text-section">
                                             <QuestionAnswer
                                                 paraId={4}
                                                 outerDivClass="networking-strategy-section-row"
@@ -76,7 +76,7 @@ software, optimizing performance from the start."
                                         <div class="networking-text-video-right-section second-video-section section-zoomIn">
                                             <p>video</p>
                                         </div>   
-                                        <div class="networking-bottom-big-text-section section-zoomIn">
+                                        <div class="networking-bottom-big-text-section">
                                         <QuestionAnswer
                                                 paraId={7}
                                                 outerDivClass="networking-strategy-section-row"
@@ -122,7 +122,7 @@ operates efficiently and swiftly resolves any issues."
                                         <div class="networking-text-video-right-section section-zoomIn">
                                             <p>video</p>
                                         </div>   
-                                        <div class="networking-bottom-big-text-section section-zoomIn">
+                                        <div class="networking-bottom-big-text-section">
                                         <div><QuestionAnswer
                                                 paraId={11}
                                                 outerDivClass="networking-strategy-section-row"
@@ -178,7 +178,7 @@ a swift resumption during a disaster."
                                         <div class="networking-text-video-right-section section-zoomIn">
                                             <p>video</p>
                                         </div>   
-                                        <div class="networking-bottom-big-text-section section-zoomIn">
+                                        <div class="networking-bottom-big-text-section">
                                         <QuestionAnswer
                                                 paraId={16}
                                                 outerDivClass="networking-strategy-section-row"

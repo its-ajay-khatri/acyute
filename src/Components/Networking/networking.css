@@ -5,7 +5,7 @@
 
 .networking-welcome-text-section {
     height: 100%;
-    padding: 2em 5em;
+    padding: 2em 4em;
     background-color: #090909;
     color: white;
     font-family: Montserrat;
@@ -87,4 +87,125 @@
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1259px) {
+    .networking-welcome-text-section{
+        padding: 2em 2.5em;
+        font-size: 20px;
+    }
+
+    .networking-strategy-section-container{
+        padding: 2em 3em;
+    }
+
+    .networking-text-video-section{
+        padding: 0;
+    }
+    
+    .strategy-section-heading{
+        font-size: 20px !important;
+        margin-top: 0.5em;
+    }
+
+    .strategy-section-subtitle{
+        font-size: 17px !important;
+    }
+
+    .networking-text-video-right-section{
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .networking-video-section{
+        padding: 2em;
+    }
+
+    .networking-strategy-section-container p.strategy-section-heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .networking-strategy-section-container p.strategy-section-subtitle{
+        margin-top: 0 !important;
+    }
+
+    .networking-text-center-bold-section{
+        padding: 2em 0em 1em 0em;
+    }
+
+    .networking-text-center-bold-section p{
+        font-size: 17px;
+    }
+
+    .networking-text-with-circle-section{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .networking-welcome-text-section{
+        padding: 2em 2.5em;
+        font-size: 20px;
+    }
+
+    .networking-strategy-section-container{
+        padding: 2em 3em;
+    }
+
+    .networking-text-video-section{
+        padding: 0;
+    }
+    
+    .strategy-section-heading{
+        font-size: 20px !important;
+        margin-top: 0.5em;
+    }
+
+    .networking-bottom-big-text-section, .networking-text-video-right-section{
+        width: 100%;
+    }
+
+    .networking-text-video-container{
+        flex-direction: column;
+    }
+
+    .networking-text-video-right-section{
+        margin: 2em 0em;
+    }
+
+    .strategy-section-subtitle{
+        font-size: 17px !important;
+    }
+
+    .networking-text-video-right-section{
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .networking-video-section{
+        padding: 2em;
+    }
+
+    .networking-strategy-section-container p.strategy-section-heading {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .networking-strategy-section-container p.strategy-section-subtitle{
+        margin-top: 0 !important;
+    }
+    
+    .networking-text-center-bold-section{
+        padding: 2em 0em 1em 0em;
+    }
+
+    .networking-text-center-bold-section p{
+        font-size: 17px;
+    }
+
+    .networking-text-with-circle-section{
+        margin-top: 0;
+    }
 }

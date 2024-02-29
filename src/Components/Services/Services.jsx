@@ -105,7 +105,7 @@ const Services = () => {
                     <>      <div className="services-heading-section">
                                 <p className="services-heading">Services</p>
                             </div>
-                             <div className="web-development-strategy-section-container">                                
+                             <div className="services-strategy-section-container">                                
                                 <div className="it-consultancy-fifty-fifty-section">
 
                                     <Link to='/web-development' className="fifty-fifty-left-container">
