@@ -1,0 +1,60 @@
+.lets-talk-outer-section{
+    background-color: black;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lets-talk-inner-section {
+    overflow: hidden;
+    margin: 5em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+
+}
+.lets-talk-left-div {
+    float: left;
+    font-weight: 300;
+    font-family: monospace;
+    width: 60%;
+    /* justify-content: center; */
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    color: aliceblue;
+    padding: 2em 0em;
+}
+
+.lets-talk-circle-section p {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3.5em 2.5em;
+}
+
+.lets-talk-left-div p {
+    padding-right: 1em;
+    line-height: 1.5em;
+}
+
+.lets-talk-right-div {
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Clear floats to prevent layout issues */
+.lets-talk-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}

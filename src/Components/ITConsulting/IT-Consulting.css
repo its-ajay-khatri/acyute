@@ -140,6 +140,50 @@ p.strategy-section-subtitle {
     padding: 2em 4em 4em 2em;
 }
 
+.it-consultancy-text-with-circle-section {
+    margin-top: 5em;
+  }
+  
+  .web-design-video-section .row{
+    justify-content: center;
+  }
+  
+  .it-consultancy-text-with-circle-section .e-cta__text{
+    font-size: 46px !important;
+    font-weight: 100;
+    font-family: Montserrat;
+  }
+  
+  .it-consultancy-text-with-circle-section .e-cta{
+    border:1px solid white
+  }
+  
+  .it-consultancy-text-with-circle-section a.e-cta.is-inview{
+    height: 300px;
+    width: 300px;
+  }
+  
+  .it-consultancy-text-with-circle-section .row{
+    justify-content: center;
+  }
+  
+  .db-management-full-width-video-section .row{
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 1399px) {
+    .it-consultancy-text-with-circle-section .col-md-12.col-xl-11.offset-md-2{
+      margin-right: 15%;
+    }
+  }
+
+  @media screen and (min-width: 1299px) and (max-width:1398px){
+    .it-consultancy-text-with-circle-section .col-md-12.col-xl-11.offset-md-2{
+      margin-right: 10%;
+    }
+  
+  }
+
 @media screen and (min-width: 768px) and (max-width:1299px) {
     .it-consulting-main-container .text-center-non-bold{
         padding: 1em 2em;
@@ -179,6 +223,22 @@ p.strategy-section-subtitle {
 
     .it-consultancy-fifty-fifty-section .fifty-fifty-right-container{
         padding-left: 1em;
+    }
+
+    .it-consultancy-text-with-circle-section .b-content-button__titles {
+        margin-right: 10px;
+    }
+    
+    .it-consultancy-text-with-circle-section .e-cta__text{
+      font-size: 40px !important;
+    }
+    
+    .it-consultancy-text-with-circle-section a.e-cta.is-inview{
+      height: 300px;
+      width: 300px;
+    }
+    .it-consultancy-text-with-circle-section {
+        padding: 0em 3em;
     }
 }
 
@@ -227,4 +287,57 @@ p.strategy-section-subtitle {
     .it-consultancy-bottom-big-text-section{
         width: 100%;
     }
+
+    .it-consultancy-text-with-circle-section a.e-cta.is-inview{
+        height: 250px;
+        width: 250px;
+      }
+      
+    .it-consultancy-text-with-circle-section .e-cta__text{
+        font-size: 30px !important
+      }
+    
+      .it-consultancy-text-with-circle-section{
+        padding: 2em 0em;
+      }
+    
+      .it-consultancy-text-with-circle-section .row{
+        flex-direction: column;
+      }
+    
+      .it-consultancy-text-with-circle-section .col-md-12.col-xl-11.offset-md-2{
+        margin-right: 4em;
+      }
+      .it-consultancy-text-with-circle-section .b-content-button__titles{
+        font-size: 25px;
+      }
+
+      .it-consulting-main-container section.b-content-button.u-margin {
+        margin: 1em 0em;
+    }
 }
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .it-consultancy-text-with-circle-section .e-title{
+      font-family: 25px;
+    }
+  }
+  
+  @media screen and (min-width:1200px) and (max-width:1299px) {
+    .it-consultancy-text-with-circle-section .col-md-12.col-xl-11.offset-md-2 {
+        margin-right: 15% !important;
+    }
+  }  
+  
+  @media screen and (min-width:1023px) and (max-width:1199px) {
+    .it-consultancy-text-with-circle-section .col-md-12.col-xl-11.offset-md-2 {
+        margin-right: 10% !important;
+    }
+  }  
+  
+  @media screen and (max-width:500px) {
+    .it-consultancy-text-with-circle-section .row{
+      display: block;
+    }
+  }
+  

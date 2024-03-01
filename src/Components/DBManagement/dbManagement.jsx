@@ -172,17 +172,21 @@ fix bugs and vulnerabilities."
                                 
                             </div>
                         </div>
-                        <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                        <div className="db-management-full-width-video-section">
+                            <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                        </div>
                         <div>
                             <BoldTextCenterSection classNametext="center-text-bold-section" paraId={20} boldText="At Acyute, we understand the critical role of databases in modern businesses. By tailoring our services to
                             each organization's specific needs, we ensure your database infrastructure's reliability, security, efficiency,
                             and scalability, a key component in your business's operational success."     
                         />
                         </div>
+                        <div className="db-management-text-with-circle-section">
                         <TextWithCircle paraId="21" leftSectionText="If you've got an idea, feel free to drop by and
                             discuss it with us to discover the ways we can
                             assist you in bringing it to life." CircleText="Contact us" CircleLink="contact" LeaveARequestText="" />
                         <FooterComponent />
+                        </div>
                     </>
                 }
             </div>

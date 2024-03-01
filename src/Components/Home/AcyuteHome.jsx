@@ -224,7 +224,7 @@ const AcyuteHome = () => {
                                     </div>
                               </div>
                           </div>
-                          <div className="home-page-top-video-section">
+                          <div className="home-middle-text-with-circle-section">
                             <TextWithCircle paraId="1" leftSectionText="We Ellevate Your Business to the Next Level with Cutting-Edge Technology." CircleLink="contact" CircleText='Contact us'  />    
                           </div>                            
                           <div className="homepage-full-width-video-section">
@@ -255,7 +255,7 @@ const AcyuteHome = () => {
  
                             <PortfolioSlider />
                           <div className="home-bottom-text-with-cicle-section">
-                            <TextWithCircle paraId="4" leftSectionText="Have Question? We got you" CircleLink="contact" CircleText='Leave Inquiry'  />
+                            <TextWithCircle paraId="4" leftSectionText={ ` Have Questions? `+ `\n` + `we Got you`} CircleLink="contact" CircleText='Leave Inquiry'  />
                             </div>
                           </div>
                     </div>

@@ -103,16 +103,21 @@ to your website with a cost-effective approach where you pay per ad click."
 
                             </div>
                        </div>
-                <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                <div className="digital-marketing-full-width-video-section">
+                    <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+
+                </div>
                 <div className="digital-marketing-bold-center-section">
                     <BoldTextCenterSection classNametext="center-text-bold-section" paraId={11} boldText="At Acyute, we understand the critical role of databases in modern businesses. By tailoring our services to 
 each organization's specific needs, we ensure your database infrastructure's reliability, security, efficiency, 
 and scalability, a key component in your business's operational success."     
                 />
                 </div>
-                <TextWithCircle paraId="12" leftSectionText="If you've got an idea, feel free to drop by and
-                    discuss it with us to discover the ways we can
-                    assist you in bringing it to life." CircleText="Contact us" CircleLink="contact" LeaveARequestText="" />
+                <div className="digital-marketing-text-with-circle-section">
+                    <TextWithCircle paraId="12" leftSectionText="If you've got an idea, feel free to drop by and
+                        discuss it with us to discover the ways we can
+                        assist you in bringing it to life." CircleText="Contact us" CircleLink="contact" LeaveARequestText="" />
+                </div>
                 <FooterComponent />
             </div>
         </>

@@ -48,10 +48,10 @@ const TextWithCircle = ({paraId , leftSectionText, CircleText, CircleLink}) =>{
                                     {/* <div className="e-suptitle" data-animate="suptitleReveal">
                               
                                     </div> */}
-                                    <h2 className={"e-title" + (animatee ? (" section-lineUp2") : ("")) } ata-animate="splitLinesReveal">{ animatee && leftSectionText}
-                                    </h2>      </div>
+                                    <p className={"e-title" + (animatee ? (" section-lineUp2") : ("")) } ata-animate="splitLinesReveal">{ animatee && leftSectionText}
+                                    </p>      </div>
                                 </div>
-                                <div className="col-md-6 col-xl-7 offset-md-2">
+                                <div >
                                 <div className="b-content-button__cta">
                                     <a href={`${CircleLink}`}  className={`e-cta is-inview ${isHovered ? 'a' : ''}`} data-scroll data-scoll-call="cta" data-scroll-repeat style={{transform: isHovered ? `'3s ease-in-out'` : ''}}  onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                                     {/* <span className="e-cta__hover hover" /> */}
