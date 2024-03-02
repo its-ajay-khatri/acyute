@@ -67,22 +67,22 @@ const Header = ({showMenuPopup, setShowMenuPopup}) => {
                                 <div className="menu__items u-list" style={{pointerEvents:'all'}}>
                                 <Link to="/services" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
-                                        <span>Services</span>
+                                        <span>SERVICES</span>
                                     </span>
                                  </Link>
                                  <Link to="/about" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
-                                        <span>About Us</span>
+                                        <span>ABOUT US</span>
                                     </span>
                                  </Link>
                                  <Link to="/web-design" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
-                                        <span>Our Projects</span>
+                                        <span>OUR PROJECTS</span>
                                     </span>
                                  </Link>
                                  <Link to="/contact" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
-                                        <span>Contact Us</span>
+                                        <span>CONTACT US</span>
                                     </span>
                                  </Link>
                                 </div>

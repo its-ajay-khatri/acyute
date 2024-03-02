@@ -12,6 +12,7 @@ import Loading from "../Loading/Loading";
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import TextLeftNonBold from "../CommonComponents/TextLeftNonBold/TextLeftNonBold";
 import PortfolioSlider from "./PortfolioSlider";
+import HomeImage from '../../assets/videos/database-management.mp4'
 
 const AcyuteHome = () => {
 
@@ -228,7 +229,7 @@ const AcyuteHome = () => {
                             <TextWithCircle paraId="1" leftSectionText="We Ellevate Your Business to the Next Level with Cutting-Edge Technology." CircleLink="contact" CircleText='Contact us'  />    
                           </div>                            
                           <div className="homepage-full-width-video-section">
-                              <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                              <FullWidthVideoSection videoUrlLoop={HomeImage} videoUrl={HomeImage} />
                           </div>
 
                           <section

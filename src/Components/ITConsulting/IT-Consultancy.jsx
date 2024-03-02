@@ -8,6 +8,10 @@ import BoldTextCenterSection from "../CommonComponents/BoldTextCenterSection/Bol
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import FooterComponent from "../CommonComponents/Footer/footerComponent";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
+import ITImageBanner from '../../assets/videos/IT-consulting.mp4';
+import ITConsultancyImg1 from '../../assets/images/IT-consultancy/IT-consulting1.jpeg'
+import ITConsultancyImg2 from '../../assets/images/IT-consultancy/IT-consulting2.jpeg'
+import ITConsultancyImg3 from '../../assets/images/IT-consultancy/IT-consulting3.jpeg'
 
 const ITConsultancy = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
@@ -19,7 +23,7 @@ const ITConsultancy = () => {
     return(
         <>
             <div className="it-consulting-main-container">
-                <TopVideoSection videoBackgroundColor='cyan' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection videoUrlLoop={ITImageBanner} videoUrl={ITImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
                        <div>
@@ -95,7 +99,7 @@ const ITConsultancy = () => {
                             <div className="it-consultancy-text-video-section">
                                 <div class="it-consultancy-text-video-container">
                                     <div class="it-consultancy-text-video-right-section">
-                                        <p>video</p>
+                                        <img src={ITConsultancyImg1} />
                                     </div>
                                     <div class="it-consultancy-bottom-big-text-section">
                                         <div><QuestionAnswer
@@ -169,7 +173,7 @@ const ITConsultancy = () => {
                                            
                                     </div>  
                                     <div class="it-consultancy-text-video-right-section">
-                                        <p>video</p>
+                                        <img src={ITConsultancyImg2} />
                                     </div>                                  
                                 </div>
                                <div>
@@ -186,7 +190,7 @@ const ITConsultancy = () => {
                             <div className="it-consultancy-text-video-section">
                                 <div class="it-consultancy-text-video-container">
                                     <div class="it-consultancy-text-video-right-section">
-                                        <p>video</p>
+                                        <img src={ITConsultancyImg3} />
                                     </div>
                                     <div class="it-consultancy-bottom-big-text-section">
                                         <div><QuestionAnswer

@@ -2,6 +2,14 @@ import React from "react";
 import './footer.css';
 import FooterLogo from  '../../../assets/images/footer-logo.png'
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+//   faTimes,
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const FooterComponent = () => {
     return(
@@ -9,10 +17,10 @@ const FooterComponent = () => {
             <footer className="footer-outer-section">
                 <div className="footer-about-section">
                     <div className="footer-find-us-section">
-                        <p>You can <br />find us</p>
+                        <p>You can { window.innerWidth > 769 && <br /> }find us</p>
                     </div>
                     <div className="footer-logo-section">
-                        <img width={250} height={250} src={FooterLogo} />
+                        <img src={FooterLogo} />
                     </div>
                     <div className="footer-contact-us-section">
                         <p>Toronto</p>
@@ -23,10 +31,11 @@ const FooterComponent = () => {
                 <div className="footer-container">
                         <div className="social-media-section">
                             <div className="social-media-section-inner">
-                                <a>a</a>
-                                <a>b</a>
-                                <a>c</a>
-                                <a>d</a>
+                            <FontAwesomeIcon icon={faTimes} className="icon-white-bg-black" />
+                            <FontAwesomeIcon icon={faFacebook} className="icon-blue-bg-white" />
+                            <FontAwesomeIcon icon={faInstagram} className="icon-instagram" />
+                            {/* <FontAwesomeIcon icon={faEnvelope} className="icon-gmail" /> */}
+                            <FontAwesomeIcon icon={faLinkedin} className="icon-white-bg-blue" />
                             </div>
                             <div className="footer-copyright-section">
                                 2024 - Acyute Technologies

@@ -188,19 +188,22 @@
     }
     
     &.cont-1 {
-      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-1.jpg') 50% 50% no-repeat fixed;
+      background: url('../../assets//images/home-images//db-management-home.jpeg') 50% 50% no-repeat fixed;
     }
     &.cont-2 {
-      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-2.jpg') 50% 50% no-repeat fixed;
+      background: url('../../assets//images/home-images//db-management-home.jpeg') 50% 50% no-repeat fixed;
     }
     &.cont-3 {
-      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-3.jpg') 50% 50% no-repeat fixed;
+      background: url('../../assets//images/home-images//it-consulting-home.jpeg') 50% 50% no-repeat fixed;
     }
     &.cont-4 {
-      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-4.jpg') 50% 50% no-repeat fixed;
+      background: url('../../assets//images/home-images//networking-home.jpeg') 50% 50% no-repeat fixed;
     }
     &.cont-5 {
-        background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-1.jpg') 50% 50% no-repeat fixed;
+      background: url('../../assets//images/home-images//software-development-home.jpeg') 50% 50% no-repeat fixed;
+    }
+    &.cont-6 {
+      background: url('../../assets//images/home-images//web-design-home.jpeg') 50% 50% no-repeat fixed;
     }
     
     /* @for $i from 2 through 10 {

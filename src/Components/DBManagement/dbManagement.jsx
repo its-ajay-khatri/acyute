@@ -8,6 +8,9 @@ import FooterComponent from "../CommonComponents/Footer/footerComponent";
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
 import FullWidthVideoSection from "../FullWidthVideoSection/FullWidthVideoSection";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
+import DBImageBanner from '../../assets/videos/database-management.mp4';
+import DatabaseImage1 from '../../assets/images/databse-management/Database-management-1.jpeg'
+import DatabaseImage2 from '../../assets/images/databse-management/Database-management-2.jpeg'
 
 const DatabaseMangement = () => {
 
@@ -16,7 +19,7 @@ const DatabaseMangement = () => {
     return(
         <>
             <div className="db-management-section-main-container">
-                <TopVideoSection videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+                <TopVideoSection videoUrlLoop={DBImageBanner} videoUrl={DBImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
                        <div>
@@ -84,7 +87,7 @@ thorough audits."
                              
                                 </div>
                                 <div class="db-management-text-video-right-section">
-                                    <p>video</p>
+                                    <img src={DatabaseImage1} />
                                 </div>
                             </div>
                         </div>
@@ -110,7 +113,7 @@ storage techniques."
                         <div className="db-management-text-video-section db-management-bottom-section">
                             <div class="db-management-text-video-container">
                                 <div class="db-management-text-video-right-section">
-                                    <p>video</p>
+                                <img src={DatabaseImage2} />
                                 </div>
                                 <div class="db-management-bottom-big-text-section">
                                             <div><QuestionAnswer
@@ -173,9 +176,9 @@ fix bugs and vulnerabilities."
                             </div>
                         </div>
                         <div className="db-management-full-width-video-section">
-                            <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                            <FullWidthVideoSection videoUrlLoop={DBImageBanner} videoUrl={DBImageBanner} />
                         </div>
-                        <div>
+                        <div className="db-management-text-bold-section">
                             <BoldTextCenterSection classNametext="center-text-bold-section" paraId={20} boldText="At Acyute, we understand the critical role of databases in modern businesses. By tailoring our services to
                             each organization's specific needs, we ensure your database infrastructure's reliability, security, efficiency,
                             and scalability, a key component in your business's operational success."     

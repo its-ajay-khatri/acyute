@@ -29,6 +29,10 @@
     width: 100%;
 }
 
+.networking-text-video-container img{
+    width: 90%;
+}
+
 .networking-bottom-big-text-section {
     width: 80%;
 }

@@ -8,6 +8,9 @@ import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
 import BoldTextCenterSection from "../CommonComponents/BoldTextCenterSection/BoldTextCenterSection";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
+import SoftwareDevelopmentBanner from '../../assets/videos/software-development.mp4'
+import SoftwareDevImage1 from '../../assets/images/software-development/Software-development-1.jpeg'
+import SoftwareDevImage2 from '../../assets/images/software-development/Software-development-2.jpeg'
 
 const WebDevelopment = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
@@ -18,7 +21,7 @@ const WebDevelopment = () => {
     return(
         <>
             <div className="software-development-outer-container">
-                <TopVideoSection videoBackgroundColor='blue' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection videoUrlLoop={SoftwareDevelopmentBanner} videoUrl={SoftwareDevelopmentBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
                         <div className="section-slideInUp">
@@ -78,7 +81,7 @@ const WebDevelopment = () => {
                                                 
                                         </div>  
                                         <div class="web-development-text-video-right-section section-zoomIn">
-                                            <p>video</p>
+                                           <img src={SoftwareDevImage1} />
                                         </div>                                  
                                     </div>
                                 </div>
@@ -94,7 +97,7 @@ const WebDevelopment = () => {
                                 <div className="web-development-text-video-section web-development-video-left-40-text-right-60">
                                     <div class="web-development-text-video-container">
                                         <div class="web-development-text-video-right-section section-zoomIn">
-                                            <p>video</p>
+                                        <img src={SoftwareDevImage2} />
                                         </div>
                                         <div class="web-development-bottom-big-text-section">                                 
                                             <QuestionAnswer

@@ -1,9 +1,16 @@
 .footer-outer-section {
-    padding: 1em 5em 1em 10em;
+    /* padding: 1em 5em 1em 10em; */
+    padding: 1em 2em;
     background-color: #090909;
     font-family: Montserrat;
     color: #fff;
   }
+
+  .footer-outer-section .footer-find-us-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
   
   .footer-about-section {
     height: 20vh;
@@ -62,7 +69,7 @@
   }
 
   .footer-container{
-    padding-top: 5em;
+    padding-top: 4em;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -78,7 +85,7 @@
 }
 
 .footer-privacy-policy-section {
-  width: 55%;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -98,4 +105,177 @@
     font-family: 1.1em;
 }
 
+.footer-logo-section img {
+  width: 350px;
+  height: 100px;
+}
 
+.footer-contact-us-section p{
+  font-size: 28px;
+}
+
+.footer-contact-us-section q{
+  font-size: 21px;
+}
+
+.social-media-section {
+  padding-left: 5em;
+}
+
+.icon-white-bg-black {
+  color: white;
+  background-color: black;
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+.icon-blue-bg-white {
+  color: white;
+  background-color: #1877f2; /* Facebook blue */
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+.icon-instagram {
+  color: #e4405f; /* Instagram color */
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+.icon-gmail {
+  color: white;
+  background-color: #ea4335; /* Gmail red */
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+.icon-white-bg-blue {
+  color: #ffffff;
+  background-color: #0077b5; /* LinkedIn blue */
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+@media screen and (min-width:900px) and (min-width:1050px) {
+  .social-media-section {
+    padding-left: 4em;
+}
+}
+
+/* Responsive styles for 768px and below */
+@media (max-width: 768px) {
+  .footer-outer-section {
+      padding: 1em;
+  }
+
+  .footer-container {
+    display: block;
+}
+
+.social-media-section {
+  padding-left: 0em;
+}
+
+  .footer-about-section {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+  }
+
+  .footer-find-us-section,
+  .footer-logo-section,
+  .footer-contact-us-section a{
+      width: 100%;
+  }
+
+  .footer-logo-section img {
+    width: 100%;
+    height: 100%;
+}
+
+  .footer-find-us-section,
+  .footer-logo-section,
+  .footer-contact-us-section p,
+  .footer-contact-us-section a {
+      text-align: center;
+  }
+
+  .social-media-section,
+  .footer-privacy-policy-section {
+      width: 100%;
+      text-align: center;
+  }
+
+  .social-media-section-inner a {
+      padding: 10px;
+  }
+
+  .footer-privacy-policy-section a {
+      padding: 0.5em;
+      font-size: 0.9em;
+  }
+}
+
+/* Responsive styles for 1024px and below */
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  .footer-outer-section {
+      padding: 1em;
+  }
+
+  .footer-about-section {
+      height: auto;
+      /* flex-direction: column; */
+      /* text-align: center; */
+  }
+
+  .footer-find-us-section,
+  .footer-logo-section,
+  .footer-contact-us-section a{
+      /* width: 100%; */
+      margin-bottom: 1em;
+  }
+
+  /* .social-media-section,
+  .footer-privacy-policy-section {
+      width: 100%;
+  } */
+
+  .footer-copyright-section,
+  .social-media-section-inner a,
+  .footer-privacy-policy-section a {
+      padding: 0.5em;
+      font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .footer-about-section {
+    flex-direction: column;
+}
+.footer-contact-us-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+}
+
+@media screen and (max-width:560px){
+  .footer-contact-us-section{
+    flex-direction: column;
+  }
+
+  .footer-privacy-policy-section {
+    flex-direction: column;
+    text-align: left;
+}
+
+p.banner-section-sub-title.section-lineDown {
+  /* width: 54px; */
+  font-size: 3em !important;
+}
+}
+
+@media screen and (min-width:1080px) {
+  .footer-privacy-policy-section a {
+    font-size: 18px;
+}
+}

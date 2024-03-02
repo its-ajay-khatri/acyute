@@ -67,6 +67,10 @@
     padding: 2em 4.5em;
 }
 
+.web-design-strategy-section-container img{
+  width: 90%;
+}
+
 .web-design-text-with-circle-section {
     margin-top: 5em;
 }

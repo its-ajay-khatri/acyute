@@ -205,8 +205,15 @@ const PortfolioSlider = () => {
                 </div>
                 <div className="img-cont left cont-5" data-helper="-4" data-blocks="5"></div>
                 <div className="img-cont right cont-5" data-helper="4" data-blocks="5"></div>
-                <div className="content cont-4">
-                  <h2 className="title">Page 4 Content</h2>
+                <div className="content cont-5">
+                  <h2 className="title">Page 5 Content</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <span className="close">+</span>
+                </div>
+                <div className="img-cont left cont-6" data-helper="-5" data-blocks="6"></div>
+                <div className="img-cont right cont-6" data-helper="5" data-blocks="6"></div>
+                <div className="content cont-6">
+                  <h2 className="title">Page 6 Content</h2>
                   <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
                   <span className="close">+</span>
                 </div>

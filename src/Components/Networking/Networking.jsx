@@ -4,10 +4,14 @@ import './networking.css';
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import FooterComponent from "../CommonComponents/Footer/footerComponent";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
-import FullWidthVideoSection from "../FullWidthVideoSection/FullWidthVideoSection";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
 import BoldTextCenterSection from "../CommonComponents/BoldTextCenterSection/BoldTextCenterSection";
+import NetworkingBanner from '../../assets/videos/Networking-video.mp4'
+import NetworkkingImage1 from '../../assets/images/networking/networking-1.jpeg'
+import NetworkkingImage2 from '../../assets/images/networking/Networking-2.jpeg'
+import NetworkkingImage3 from '../../assets/images/networking/Networking-3.jpeg'
+
 
 const WebDesign = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
@@ -19,7 +23,7 @@ const WebDesign = () => {
     return(
         <>
             <div className="networking-main-container">
-                <TopVideoSection videoBackgroundColor='pink' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection videoUrlLoop={NetworkingBanner} videoUrl={NetworkingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { 
                     !showMenuPopup &&
                     <>
@@ -33,7 +37,7 @@ how we provide unparalleled networking services." />
                             <div className="networking-text-video-section">
                                     <div class="networking-text-video-container">
                                         <div class="networking-text-video-right-section first-video-section section-zoomIn">
-                                            <p>video</p>
+                                            <img src={NetworkkingImage1} />
                                         </div>   
                                         <div class="networking-bottom-big-text-section">
                                             <QuestionAnswer
@@ -74,7 +78,7 @@ software, optimizing performance from the start."
                                     </div>
                                     <div class="networking-text-video-container">
                                         <div class="networking-text-video-right-section second-video-section section-zoomIn">
-                                            <p>video</p>
+                                            <img src={NetworkkingImage2} />
                                         </div>   
                                         <div class="networking-bottom-big-text-section">
                                         <QuestionAnswer
@@ -120,7 +124,7 @@ operates efficiently and swiftly resolves any issues."
                                     </div>
                                     <div class="networking-text-video-container">
                                         <div class="networking-text-video-right-section section-zoomIn">
-                                            <p>video</p>
+                                            <img src={NetworkkingImage3} />
                                         </div>   
                                         <div class="networking-bottom-big-text-section">
                                         <div><QuestionAnswer
@@ -176,7 +180,7 @@ a swift resumption during a disaster."
                                     </div>
                                     <div class="networking-text-video-container">
                                         <div class="networking-text-video-right-section section-zoomIn">
-                                            <p>video</p>
+                                            <img src={NetworkkingImage1} />
                                         </div>   
                                         <div class="networking-bottom-big-text-section">
                                         <QuestionAnswer

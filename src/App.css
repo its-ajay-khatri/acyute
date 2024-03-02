@@ -7485,7 +7485,7 @@ h3{
   -ms-flex-pack:justify;
   justify-content:space-between;
   height:100vh;
-  padding-top:120px;
+  padding-top:200px;
   overflow-y:scroll
 }
 @media screen and (min-width: 768px){
@@ -7563,9 +7563,9 @@ h3{
   transition:transform .8s cubic-bezier(0.23, 1, 0.32, 1),opacity .8s cubic-bezier(0.23, 1, 0.32, 1);
   transition:transform .8s cubic-bezier(0.23, 1, 0.32, 1),opacity .8s cubic-bezier(0.23, 1, 0.32, 1),-webkit-transform .8s cubic-bezier(0.23, 1, 0.32, 1),-o-transform .8s cubic-bezier(0.23, 1, 0.32, 1)
 }
-.menu__item:not(:last-child){
+/* .menu__item:not(:last-child){
   padding-bottom:5px
-}
+} */
 @media(hover: hover){
   .menu__item:hover{
       -webkit-transform:translateX(30px);
@@ -7586,12 +7586,12 @@ h3{
       line-height:8.79vh
   }
 }
-@media screen and (min-width: 1200px){
+/* @media screen and (min-width: 1200px){
   .menu__item-title{
       font-size:clamp(16px,8.88vh,96px);
       line-height:11.11vh
   }
-}
+} */
 .menu__item-title::after{
   content:"";
   position:absolute;

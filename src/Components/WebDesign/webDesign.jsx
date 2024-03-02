@@ -7,6 +7,10 @@ import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection
 import FullWidthVideoSection from "../FullWidthVideoSection/FullWidthVideoSection";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
+import WebDesignBanner from '../../assets/videos/web-design.mp4'
+import WebDesignImge1 from '../../assets/images/web-design/web-design-1.jpeg'
+import WebDesignImge2 from '../../assets/images/web-design/web-design-2.jpeg'
+import HomeImage from '../../assets/videos/database-management.mp4'
 
 const WebDesign = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
@@ -18,7 +22,7 @@ const WebDesign = () => {
     return(
         <>
             <div className="web-design-main-container">
-                <TopVideoSection videoBackgroundColor='green' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection videoUrlLoop={WebDesignBanner} videoUrl={WebDesignBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { 
                     !showMenuPopup &&
                     <>
@@ -78,19 +82,19 @@ const WebDesign = () => {
                                                    
                                         </div>  
                                         <div class="web-design-text-video-right-section section-zoomIn">
-                                            <p>video</p>
+                                            <img src={WebDesignImge1} />
                                         </div>                                  
                                     </div>
                             </div>
                         </div>
                         <div className="web-design-video-section section-bounceIn">
-                            <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                            <FullWidthVideoSection videoUrlLoop={HomeImage} videoUrl={HomeImage}/>
                         </div>
                         <div className="web-design-strategy-section-container">
                             <div className="web-design-text-video-section">
                                     <div class="web-design-text-video-container">
                                         <div class="web-design-text-video-right-section section-zoomIn">
-                                            <p>video</p>
+                                        <img src={WebDesignImge2} />
                                         </div>   
                                         <div class="web-design-bottom-big-text-section section-zoomIn">
                                             <div><QuestionAnswer

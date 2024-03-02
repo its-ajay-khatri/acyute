@@ -67,14 +67,15 @@ p.Service-name-description {
     color: #99999a;
 }
 
-@media screen and (min-width:1024px) and (max-width:1299px) {
+@media screen and (min-width:1024px) {
 
     .services-strategy-section-container{
         padding: 3em 4em;
+        align-items: center;
     }
 
     .fifty-fifty-left-container p{
-        font-size: 20px;
+        font-size: 30px;
     }
     .fifty-fifty-left-container{
         padding: 1.5em;

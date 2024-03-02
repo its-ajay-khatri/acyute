@@ -113,6 +113,10 @@ p.strategy-section-subtitle {
     text-align: left;
 }
 
+.it-consultancy-text-video-section img{
+  width: 90%;
+}
+
 .it-consulting-main-container section.b-content-button.u-margin {
     margin: 2em;
 } 

@@ -6,6 +6,8 @@ import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import FooterComponent from "../CommonComponents/Footer/footerComponent";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
 import TextLeftNonBold from "../CommonComponents/TextLeftNonBold/TextLeftNonBold";
+import AboutImage from '../../assets/images/IT-consultancy/IT-consulting3.jpeg';
+import AboutBannerVideo from '../../assets/videos/Networking-video.mp4'
 
 const About = () => {
 
@@ -19,7 +21,7 @@ const About = () => {
     return(
         <>
             <div className="about-section-main-container">
-                <TopVideoSection videoBackgroundColor='green' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection videoUrlLoop={AboutBannerVideo} videoUrl={AboutBannerVideo} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                 <>
                     <div className="about-welcome-text-section">
@@ -55,7 +57,7 @@ const About = () => {
                                     success is our mission." />
                             </div>
                             <div class="about-text-video-right-section section-lineRight">
-                                <p className="section-lineRight">video</p>
+                                <img src={AboutImage} />
                             </div>
                         </div>
                     </div>

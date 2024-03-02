@@ -3,18 +3,19 @@ import { MyContext } from "../../App";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
 import './digitalmarketing.css';
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
-import FullWidthVideoSection from "../FullWidthVideoSection/FullWidthVideoSection";
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import FooterComponent from "../CommonComponents/Footer/footerComponent";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
 import BoldTextCenterSection from "../CommonComponents/BoldTextCenterSection/BoldTextCenterSection";
+import DigitalMarketingBanner from '../../assets/videos/digital-marketing.mp4'
+import DigitalMarketingImg from '../../assets/images/digital-marketing/digital-marketing-img.jpeg'
 
 const DigitalMarketing = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
     return(
         <>
             <div className="digital-marketing-main-outer-container">
-                <TopVideoSection videoBackgroundColor='yellow' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection videoUrlLoop={DigitalMarketingBanner} videoUrl={DigitalMarketingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 <div>
                     <TextCenterNoNBold paraId={3} centerTextClass="text-center-non-bold" centerText="Acyute's digital marketing services encompass various strategies and tactics tailored to 
                         promote products, services, and brands through various digital channels. Our expertise 
@@ -104,7 +105,7 @@ to your website with a cost-effective approach where you pay per ad click."
                             </div>
                        </div>
                 <div className="digital-marketing-full-width-video-section">
-                    <FullWidthVideoSection videoUrlLoop="https://digital-cover.com/wp-content/uploads/2022/05/Showreel-Loop_Compressed.mp4" videoUrl={'https://digital-cover.com/wp-content/uploads/2022/05/Showreel_compressed.mp4'}/>
+                    <img src={DigitalMarketingImg} />
 
                 </div>
                 <div className="digital-marketing-bold-center-section">
