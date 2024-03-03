@@ -1,5 +1,5 @@
 .it-consulting-main-container{
-    background-color: #090909;
+    background-color: #0f1011;
     line-height: 2.3em !important;
 }
 
@@ -63,7 +63,7 @@ p.strategy-section-subtitle {
 .it-consultancy-text-video-section{
     box-sizing: border-box;
     padding: 2em 3em 0em 0em;
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
     width: 100%;
@@ -163,8 +163,8 @@ p.strategy-section-subtitle {
   }
   
   .it-consultancy-text-with-circle-section a.e-cta.is-inview{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
   
   .it-consultancy-text-with-circle-section .row{

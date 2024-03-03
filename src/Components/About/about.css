@@ -1,6 +1,6 @@
 
 .about-section-main-container{
-    background-color: #090909;
+    background-color: #0f1011;
     line-height: 2.3em !important;
 }
 
@@ -8,7 +8,7 @@
 .about-welcome-text-section{
     height: 100%;
     padding: 2em 4em;
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
     font-size: 36px;     /*AI */
@@ -18,7 +18,7 @@
 .about-text-video-section{
     box-sizing: border-box;
     padding: 2em 7em;
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
     font-size: 1.2em;
@@ -61,7 +61,7 @@
 
 
   .about-section-bold-text{
-    background-color: #090909;
+    background-color: #0f1011;
     padding: 2em 4em;
     color: white;
     font-family: Montserrat;
@@ -169,8 +169,8 @@
 }
 
 .about-section-text-with-cicle-section a.e-cta.is-inview{
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 
 .b-content-button__titles {

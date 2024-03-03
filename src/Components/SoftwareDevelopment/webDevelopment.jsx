@@ -21,7 +21,7 @@ const WebDevelopment = () => {
     return(
         <>
             <div className="software-development-outer-container">
-            <TopVideoSection videoUrlLoop={SoftwareDevelopmentBanner} videoUrl={SoftwareDevelopmentBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection bannerVideoHeadingText="Software Development" videoUrlLoop={SoftwareDevelopmentBanner} videoUrl={SoftwareDevelopmentBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
                         <div className="section-slideInUp">

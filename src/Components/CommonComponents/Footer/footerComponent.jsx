@@ -42,8 +42,8 @@ const FooterComponent = () => {
                             </div>
                         </div>
                         <div className="footer-privacy-policy-section">
-                            <Link to="#">Contact us</Link>
-                            <Link to="#">Join the team</Link>
+                            <Link to="/contact">Contact us</Link>
+                            <Link to="/contact">Join the team</Link>
                             <Link to="#">Web terms and conditions</Link>
                             <Link to="#">Privacy policy</Link>
                         </div>

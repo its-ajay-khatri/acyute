@@ -19,7 +19,7 @@ const DatabaseMangement = () => {
     return(
         <>
             <div className="db-management-section-main-container">
-                <TopVideoSection videoUrlLoop={DBImageBanner} videoUrl={DBImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+                <TopVideoSection bannerVideoHeadingText="Database Management" videoUrlLoop={DBImageBanner} videoUrl={DBImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
                        <div>
@@ -86,7 +86,7 @@ thorough audits."
                                             /></div>
                              
                                 </div>
-                                <div class="db-management-text-video-right-section">
+                                <div class="db-management-text-video-right-section section-zoomIn">
                                     <img src={DatabaseImage1} />
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ storage techniques."
                        </div>
                         <div className="db-management-text-video-section db-management-bottom-section">
                             <div class="db-management-text-video-container">
-                                <div class="db-management-text-video-right-section">
+                                <div class="db-management-text-video-right-section section-zoomIn">
                                 <img src={DatabaseImage2} />
                                 </div>
                                 <div class="db-management-bottom-big-text-section">

@@ -74,12 +74,10 @@ const AcyuteHome = () => {
     
       const texts = [
         "",
-        "Empowering",
-        "Your",
-        "Digital",
-        "Journey",
-        "with",
-        "Excellence"
+        "Above",
+        "Expectations,",
+        "Beyond",
+        "Boundaries."
       ];
     
       const morphTime = 1;
@@ -175,7 +173,7 @@ const AcyuteHome = () => {
                 <div className="home-page-main-counter-container">
                 <div className="app js-scroll">
                     <div className="panel" />
-                    <Header showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+                    <Header disableLoadingAnimation={true} showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
 
                    { !showMenuPopup &&
                     <>
@@ -184,7 +182,7 @@ const AcyuteHome = () => {
                     <svg className="curve-light" stroke="none" fill="#fff" preserveAspectRatio="none" viewBox="0 0 100 100" aria-hidden="true">
                         <path vectorEffect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
                     </svg>
-                    <svg className="curve-dark" stroke="none" fill="#090909" preserveAspectRatio="none" viewBox="0 0 100 100" aria-hidden="true">
+                    <svg className="curve-dark" stroke="none" fill="#0f1011" preserveAspectRatio="none" viewBox="0 0 100 100" aria-hidden="true">
                         <path vectorEffect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
                     </svg>
                     </div>
@@ -255,7 +253,7 @@ const AcyuteHome = () => {
                           </div>
  
                             <PortfolioSlider />
-                          <div className="home-bottom-text-with-cicle-section">
+                          <div className="home-bottom-text-with-cicle-section" id="bottom-text-circle-section">
                             <TextWithCircle paraId="4" leftSectionText={ ` Have Questions? `+ `\n` + `we Got you`} CircleLink="contact" CircleText='Leave Inquiry'  />
                             </div>
                           </div>

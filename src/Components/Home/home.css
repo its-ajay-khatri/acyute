@@ -41,7 +41,7 @@ color: white;
 }
 
 .home-page-outer-container{
-    background-color: #090909;
+    background-color: #0f1011;
     height: 100%;
     overflow: hidden;
 }
@@ -118,7 +118,7 @@ color: white;
 }
 
 .home-page-banner-section .home-section-background-image{
-  height: 60% !important;
+  height: 100% !important;
 }
 
 .home-section-background-image {
@@ -261,7 +261,7 @@ color: white;
 }
 
 .home-middle-text-with-circle-section .e-cta__text {
-  font-size: 36px !important;
+  font-size: 32px !important;
   font-weight: 300;
   /* color: #ffffff; */
   font-family: Montserrat;

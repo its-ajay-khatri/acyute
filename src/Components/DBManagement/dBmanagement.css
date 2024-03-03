@@ -3,7 +3,7 @@
 .db-management-text-video-section{
     box-sizing: border-box;
     padding: 0em 10em;
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
 }
@@ -27,7 +27,7 @@
 
   .db-management-text-video-right-section {
     width: 40%;
-    padding: 4em 4em 4em 0em;
+    padding: 0em 4em 0em 0em;
     /* height: 100vh; */
     display: flex;
     justify-content: center;
@@ -96,8 +96,8 @@
 }
 
 .db-management-text-with-circle-section a.e-cta.is-inview{
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 
 .db-management-text-with-circle-section .row{
@@ -144,7 +144,7 @@
   }
 
   .db-management-text-video-section{
-    padding: 0em 3em 3em 3em;
+    padding: 0em 3em 0em 3em;
   }
 
   .db-management-section-main-container .center-text-bold-section p{
@@ -171,6 +171,10 @@
 @media screen and (max-width:767px){
   .db-management-section-main-container .text-center-non-bold{
     padding: 1em;
+  }
+
+  .db-management-text-video-right-section img{
+    padding: 2em 0em;
   }
 
   .db-management-text-bold-section {

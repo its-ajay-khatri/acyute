@@ -1,7 +1,7 @@
 .footer-outer-section {
     /* padding: 1em 5em 1em 10em; */
     padding: 1em 2em;
-    background-color: #090909;
+    background-color: #0f1011;
     font-family: Montserrat;
     color: #fff;
   }
@@ -276,6 +276,11 @@ p.banner-section-sub-title.section-lineDown {
 
 @media screen and (min-width:1080px) {
   .footer-privacy-policy-section a {
-    font-size: 18px;
+    font-size: 21px;
+}
+
+.footer-find-us-section {
+  width: 20%;
+  margin-right: 14%;
 }
 }

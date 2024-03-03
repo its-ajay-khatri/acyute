@@ -23,7 +23,7 @@ const ITConsultancy = () => {
     return(
         <>
             <div className="it-consulting-main-container">
-            <TopVideoSection videoUrlLoop={ITImageBanner} videoUrl={ITImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection bannerVideoHeadingText="IT Consultancy" videoUrlLoop={ITImageBanner} videoUrl={ITImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
                        <div>
@@ -98,7 +98,7 @@ const ITConsultancy = () => {
                             </div>
                             <div className="it-consultancy-text-video-section">
                                 <div class="it-consultancy-text-video-container">
-                                    <div class="it-consultancy-text-video-right-section">
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
                                         <img src={ITConsultancyImg1} />
                                     </div>
                                     <div class="it-consultancy-bottom-big-text-section">
@@ -172,7 +172,7 @@ const ITConsultancy = () => {
                                         /></div> 
                                            
                                     </div>  
-                                    <div class="it-consultancy-text-video-right-section">
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
                                         <img src={ITConsultancyImg2} />
                                     </div>                                  
                                 </div>
@@ -189,7 +189,7 @@ const ITConsultancy = () => {
                             </div>
                             <div className="it-consultancy-text-video-section">
                                 <div class="it-consultancy-text-video-container">
-                                    <div class="it-consultancy-text-video-right-section">
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
                                         <img src={ITConsultancyImg3} />
                                     </div>
                                     <div class="it-consultancy-bottom-big-text-section">

@@ -1,5 +1,5 @@
 .digital-marketing-main-outer-container{
-    background-color: #090909;
+    background-color: #0f1011;
     line-height: 2.3em !important;
 }
 
@@ -30,6 +30,11 @@
 
 .digital-marketing-sixth-questionAnswer{
     width: 65%;
+}
+
+.digital-marketing-main-outer-container .it-consultancy-text-video-right-section{
+  margin-right: 0em !important;
+  padding: 0em;
 }
 
 
@@ -67,8 +72,8 @@
   }
   
   .digital-marketing-text-with-circle-section a.e-cta.is-inview{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
   
   .digital-marketing-text-with-circle-section .row{
@@ -172,9 +177,9 @@
         font-size: 13px;
     }
 
-    .top-video-page-video-section{
+    /* .top-video-page-video-section{
         margin: 0% 3%;
-    }
+    } */
     
     .text-center-non-bold{
         padding: 1em 0.5em;

@@ -21,7 +21,7 @@ const About = () => {
     return(
         <>
             <div className="about-section-main-container">
-            <TopVideoSection videoUrlLoop={AboutBannerVideo} videoUrl={AboutBannerVideo} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection bannerVideoHeadingText="About us" videoUrlLoop={AboutBannerVideo} videoUrl={AboutBannerVideo} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                 <>
                     <div className="about-welcome-text-section">
@@ -56,13 +56,13 @@ const About = () => {
                                     where your vision is our blueprint, and your 
                                     success is our mission." />
                             </div>
-                            <div class="about-text-video-right-section section-lineRight">
+                            <div class="about-text-video-right-section section-zoomIn">
                                 <img src={AboutImage} />
                             </div>
                         </div>
                     </div>
                     <div className="about-section-bold-text">
-                        <TextLeftNonBold paraId="7" classNameText="section-lineUp2" paraText="Acyute – Empowering Your Digital Journey with Excellence" />
+                        <TextLeftNonBold paraId="7" classNameText="section-lineUp2" paraText="Acyute – Above Expectations, Beyond Boundaries." />
                     </div>
                     <div className="about-section-text-with-cicle-section">
                         <TextWithCircle paraId="8" leftSectionText="If you've got an idea, feel free to drop by and discuss it with us to discover the ways we can assist you in bringing it to life" CircleLink="contact" CircleText='Contact us' LeaveARequestText="" />   

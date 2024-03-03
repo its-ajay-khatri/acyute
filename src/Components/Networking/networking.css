@@ -1,12 +1,12 @@
 .networking-main-container{
-    background-color: #090909;
+    background-color: #0f1011;
     line-height: 2.3em !important;  
 }
 
 .networking-welcome-text-section {
     height: 100%;
     padding: 2em 4em;
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
     font-size: 36px;
@@ -23,7 +23,7 @@
 .networking-text-video-section{
     box-sizing: border-box;
     padding: 2em 6em;
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
     width: 100%;
@@ -104,8 +104,8 @@
   }
   
   .networking-text-with-circle-section a.e-cta.is-inview{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
   
   .networking-text-with-circle-section .row{

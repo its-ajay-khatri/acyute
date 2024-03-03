@@ -4,13 +4,29 @@ import $ from 'jquery';
 
 const PortfolioSlider = () => {
 
-  const [myContentt, setMyContent] = useState(false);
+  const [currentValHolder, setCurrentValueHolder] = useState("Software Develop,ent");
 
-  useEffect(() =>{
-    if(window.scrollY >= 4000 && window.scrollY <= 4300){
-      setMyContent(true)
-    }
-  }, [window.scrollY])
+  function useHorizontalScroll() {
+    const elRef = useRef();
+    useEffect(() => {
+      const el = elRef.current;
+      if (el) {
+        const onWheel = e => {
+          if (e.deltaY == 0) return;
+          e.preventDefault();
+          el.scrollTo({
+            left: el.scrollLeft + e.deltaY,
+            behavior: "smooth"
+          });
+        };
+        el.addEventListener("wheel", onWheel);
+        return () => el.removeEventListener("wheel", onWheel);
+      }
+    }, []);
+    return elRef;
+  }
+
+  const scrollRef = useHorizontalScroll();
 
   //useEffect for Scroll JS
   useEffect(() => {
@@ -27,16 +43,43 @@ const PortfolioSlider = () => {
         scrolling = true;
         
         var _page = paramPage || curPage;
-        
+
+        var newMargin = 0;
+
         $left.each(function() {
           var marginMult = parseInt($(this).attr("data-helper"), 10) + _page - 1;
+          newMargin = marginMult * 100;
           $(this).attr("style", "margin-top: "+ marginMult * 100 +"vh");
+                
         });
+
         
         $right.each(function() {
           var marginMult = parseInt($(this).attr("data-helper"), 10) - _page + 1;
+          newMargin = marginMult * 100;
           $(this).attr("style", "margin-top: "+ marginMult * 100 +"vh");
+    
         });
+
+        if (newMargin === 0) {
+          setCurrentValueHolder("Digital Marketing")
+        } else if (newMargin === 100) {
+          setCurrentValueHolder("Web Design")
+        }
+        else if (newMargin === 200) {
+          setCurrentValueHolder("Networking")
+        }
+        else if (newMargin === 300) {
+          setCurrentValueHolder("IT Consultancy")
+        }
+        else if (newMargin === 400) {
+          setCurrentValueHolder("Database Management")
+        }
+        else if (newMargin === 500) {
+          setCurrentValueHolder("Software Development")
+        } else {
+          setCurrentValueHolder("Our Services")
+        }
         
         setTimeout(function() {
           scrolling = false;
@@ -145,98 +188,70 @@ const PortfolioSlider = () => {
       });
       
     }); 
-  }, [])
+  }, [scrollRef])
 
-
-  function useHorizontalScroll() {
-    const elRef = useRef();
-    useEffect(() => {
-      const el = elRef.current;
-      if (el) {
-        const onWheel = e => {
-          if (e.deltaY == 0) return;
-          e.preventDefault();
-          el.scrollTo({
-            left: el.scrollLeft + e.deltaY,
-            behavior: "smooth"
-          });
-        };
-        el.addEventListener("wheel", onWheel);
-        return () => el.removeEventListener("wheel", onWheel);
-      }
-    }, []);
-    return elRef;
-  }
-
-  const scrollRef = useHorizontalScroll();
+  const scrollToSection = () => {
+    const section = document.getElementById('bottom-text-circle-section');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
     return(
         <>
           <div ref={scrollRef} className="portfolio-slider-container">   
             <div style={{ width: 800}}>
               <div className="scene your-container" style={{ whiteSpace: "nowrap" }}>
-                <div className="img-cont left cont-1" data-helper="0" data-blocks="1"></div>
+                <div className="img-cont left cont-1 service-portlolio-text-section-class" data-helper="0" data-blocks="1"></div>
                 <div className="img-cont right cont-1" data-helper="0" data-blocks="1"></div>
                 <div className="content cont-1">
-                  <h2 className="title">Page 1 Content</h2>
-                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <h2 className="title">Software Development</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet.</p>
                   <span className="close">+</span>
                 </div>
                 <div className="img-cont left cont-2" data-helper="-1" data-blocks="2"></div>
                 <div className="img-cont right cont-2" data-helper="1" data-blocks="2"></div>
                 <div className="content cont-2">
-                  <h2 className="title">Page 2 Content</h2>
-                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <h2 className="title">Database management</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet.</p>
                   <span className="close">+</span>
                 </div>
                 <div className="img-cont left cont-3" data-helper="-2" data-blocks="3"></div>
                 <div className="img-cont right cont-3" data-helper="2" data-blocks="3"></div>
                 <div className="content cont-3">
-                  <h2 className="title">Page 3 Content</h2>
-                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <h2 className="title">IT Consulting</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet.</p>
                   <span className="close">+</span>
                 </div>
                 <div className="img-cont left cont-4" data-helper="-3" data-blocks="4"></div>
                 <div className="img-cont right cont-4" data-helper="3" data-blocks="4"></div>
                 <div className="content cont-4">
-                  <h2 className="title">Page 4 Content</h2>
-                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <h2 className="title">Networking</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet.</p>
                   <span className="close">+</span>
                 </div>
                 <div className="img-cont left cont-5" data-helper="-4" data-blocks="5"></div>
                 <div className="img-cont right cont-5" data-helper="4" data-blocks="5"></div>
                 <div className="content cont-5">
-                  <h2 className="title">Page 5 Content</h2>
-                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <h2 className="title">Web Designing</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet.</p>
                   <span className="close">+</span>
                 </div>
                 <div className="img-cont left cont-6" data-helper="-5" data-blocks="6"></div>
                 <div className="img-cont right cont-6" data-helper="5" data-blocks="6"></div>
                 <div className="content cont-6">
-                  <h2 className="title">Page 6 Content</h2>
-                  <p className="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, soluta, incidunt. Recusandae veritatis quam quos quaerat molestiae rem officiis blanditiis, nulla sed, corporis, sunt eveniet earum sapiente officia possimus eligendi.</p>
+                  <h2 className="title">Digital Marketing</h2>
+                  <p className="content-text">Lorem ipsum dolor sit amet.</p>
                   <span className="close">+</span>
                 </div>
                 
-                <h1 class="heading">Our Services</h1>
-                {/* <p class="scroll-down">scroll down</p> */}
-                {/* <p class="click-blocks">click blocks</p> */}
+                <h1 class="heading" style={{color:'white'}}>{currentValHolder}</h1>
                 <div class="pagination">
-                {/* <ul class="page-names">
-                    <li class="active" data-page="1">Page 1</li>
-                    <li data-page="2">Page 2</li>
-                    <li data-page="3">Page 3</li>
-                    <li data-page="4">Page 4</li>
-                  </ul>
-                 <ul class="page-dots">
-                    <li class="active" data-page="1">•</li>
-                    <li data-page="2">•</li>
-                    <li data-page="3">•</li>
-                    <li data-page="4">•</li>
-                  </ul> */}
                 </div>
               </div>
             </div>
+            <div class="arrow" style={{cursor:'pointer'}} onClick={scrollToSection}></div>
+
           </div>
         </>
     )

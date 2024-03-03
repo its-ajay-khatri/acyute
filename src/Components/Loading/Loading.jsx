@@ -14,6 +14,8 @@ const Loading = () => {
                     <span style={{ '--i': 6 }}>n</span>
                     <span style={{ '--i': 7 }}>g</span>
                     <span style={{ '--i': 8 }}>.</span>
+                    <span style={{ '--i': 8 }}>.</span>
+                    <span style={{ '--i': 8 }}>.</span>
                 </div>
             </div>
 

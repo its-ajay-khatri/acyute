@@ -1,5 +1,5 @@
 .software-development-outer-container{
-    background-color: #090909;
+    background-color: #0f1011;
     line-height: 2.3em !important;
 }
 
@@ -11,7 +11,7 @@
 .web-development-text-video-section{
     box-sizing: border-box;
     /* padding: 2em 0em; */
-    background-color: #090909;
+    background-color: #0f1011;
     color: white;
     font-family: Montserrat;
     width: 100%;
@@ -55,7 +55,7 @@
 
   .web-development-text-video-right-section {
     width: 40%;
-    padding: 2em;
+    padding: 2em 0em 0em 2em;
     margin-right: 2em;
     /* height: 100vh; */
     display: flex;
@@ -133,8 +133,8 @@
   }
   
   .web-development-text-with-circle a.e-cta.is-inview{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
 
   .web-development-text-with-circle .row{

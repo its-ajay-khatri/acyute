@@ -38,6 +38,12 @@ const TextWithCircle = ({paraId , leftSectionText, CircleText, CircleLink}) =>{
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
+
+      const updateCursorPosition = (event) => {
+    document.documentElement.style.setProperty('--x', `${event.clientX}px`);
+    document.documentElement.style.setProperty('--y', `${event.clientY}px`);
+  };
+
     return(
         <>
                         <section id={paraId ? 'textLeft'+ `${paraId}` : "textLeft8"} className="b-content-button u-margin" data-scroll-section data-scroll data-scroll-repeat data-scroll-call="content-button">
@@ -53,35 +59,19 @@ const TextWithCircle = ({paraId , leftSectionText, CircleText, CircleLink}) =>{
                                 </div>
                                 <div >
                                 <div className="b-content-button__cta">
-                                    <a href={`${CircleLink}`}  className={`e-cta is-inview ${isHovered ? 'a' : ''}`} data-scroll data-scoll-call="cta" data-scroll-repeat style={{transform: isHovered ? `'3s ease-in-out'` : ''}}  onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                                    <Link to={`/${CircleLink}`}  className={`circular-button e-cta is-inview ${isHovered ? 'a' : ''}`} data-scroll data-scoll-call="cta" data-scroll-repeat style={{transform: isHovered ? `'3s ease-in-out'` : ''}}  onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                                     {/* <span className="e-cta__hover hover" /> */}
-                                    { isHovered ? (
+                           
                                         <>
-                                            <span className="e-cta__hover hover" style={{"-webkit-transform":"translate(0px, 0px)","-ms-transform":"translate(0px, 0px)","transform":"translate(0px, 0px)"}} />
+                                            <span className="e-cta__hover hover color-change" style={{"-webkit-transform":"translate(0px, 0px)","-ms-transform":"translate(0px, 0px)","transform":"translate(0px, 0px)"}} />
                                             <div className="e-cta__inner inner" style={{"-webkit-transform":"translate3d(1.1639px, 2.86481px, 0px)","-ms-transform":"translate3d(1.1639px, 2.86481px, 0px)","transform":"translate3d(1.1639px, 2.86481px, 0px)"}}>
-                                                {/* <span className="e-cta__icon"><svg width={47} height={34} viewBox="0 0 47 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M40.9824 27.5159L45.2008 11.9169C45.9366 9.19629 44.3248 6.40455 41.6008 5.6814L25.9824 1.53516" stroke="white" strokeWidth={2} />
-                                                    <path d="M44.8394 7.95507L1.49414 32.9805" stroke="white" strokeWidth={2} />
-                                                </svg>
-                                                </span> */}
-                                                <span className="e-cta__text">{CircleText}</span>
+                                                
+                                                    <span className="e-cta__text">{CircleText}</span>
+                                                
                                             </div>
                                         </>
-                                    ) : (
-                                        <>
-                                            <div className="e-cta__inner inner" style={{transform: isHovered ? `'3s ease-in-out'` : ''}}>
-                                            {/* <span className="e-cta__icon"><svg width={47} height={34} viewBox="0 0 47 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M40.9824 27.5159L45.2008 11.9169C45.9366 9.19629 44.3248 6.40455 41.6008 5.6814L25.9824 1.53516" stroke="white" strokeWidth={2} />
-                                                <path d="M44.8394 7.95507L1.49414 32.9805" stroke="white" strokeWidth={2} />
-                                            </svg>
-                                            </span> */}
-                                            <Link to='contact-us'>
-                                                <span className="e-cta__text">{CircleText}</span>
-                                            </Link>
-                                        </div>
-                                        </>
-                                    ) }
-                                    </a>
+                                    
+                                    </Link>
                                 </div>
                                 </div>
                             </div>

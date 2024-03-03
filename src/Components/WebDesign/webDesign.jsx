@@ -22,7 +22,7 @@ const WebDesign = () => {
     return(
         <>
             <div className="web-design-main-container">
-            <TopVideoSection videoUrlLoop={WebDesignBanner} videoUrl={WebDesignBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection bannerVideoHeadingText="Web Development" videoUrlLoop={WebDesignBanner} videoUrl={WebDesignBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { 
                     !showMenuPopup &&
                     <>
@@ -96,7 +96,7 @@ const WebDesign = () => {
                                         <div class="web-design-text-video-right-section section-zoomIn">
                                         <img src={WebDesignImge2} />
                                         </div>   
-                                        <div class="web-design-bottom-big-text-section section-zoomIn">
+                                        <div class="web-design-bottom-big-text-section">
                                             <div><QuestionAnswer
                                                 paraId={10}
                                                 outerDivClass="web-design-strategy-section-row"

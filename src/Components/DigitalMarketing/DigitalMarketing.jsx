@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import { MyContext } from "../../App";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
 import './digitalmarketing.css';
+import '../ITConsulting/IT-Consulting.css';
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import FooterComponent from "../CommonComponents/Footer/footerComponent";
@@ -9,13 +10,14 @@ import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
 import BoldTextCenterSection from "../CommonComponents/BoldTextCenterSection/BoldTextCenterSection";
 import DigitalMarketingBanner from '../../assets/videos/digital-marketing.mp4'
 import DigitalMarketingImg from '../../assets/images/digital-marketing/digital-marketing-img.jpeg'
+import DigitalMarketingImg2 from '../../assets/images/software-development/Software-development-2.jpeg'
 
 const DigitalMarketing = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
     return(
         <>
             <div className="digital-marketing-main-outer-container">
-            <TopVideoSection videoUrlLoop={DigitalMarketingBanner} videoUrl={DigitalMarketingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection bannerVideoHeadingText="Digital Marketing" videoUrlLoop={DigitalMarketingBanner} videoUrl={DigitalMarketingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 <div>
                     <TextCenterNoNBold paraId={3} centerTextClass="text-center-non-bold" centerText="Acyute's digital marketing services encompass various strategies and tactics tailored to 
                         promote products, services, and brands through various digital channels. Our expertise 
@@ -33,64 +35,67 @@ const DigitalMarketing = () => {
                                     secondParaText="Elevate your online visibility with our expert SEO strategies. We focus on enhancing your website's search engine rankings, driving 
 targeted traffic, and establishing your brand as a leading authority in your industry."
                                 />
-                                <div className="digital-marketing-second-questionAnswer">
-                                    <QuestionAnswer
-                                        paraId={5}
-                                        outerDivClass="web-development-strategy-section-row"
-                                        firstParaClass="strategy-section-heading"
-                                        firstParaText="Social Media Management"
-                                        secondParaClass="strategy-section-subtitle"
-                                        secondParaText="Harness the immense potential of social media with our all-inclusive management services. From crafting engaging content to 
+                                <div className="it-consultancy-text-video-section">
+                                <div class="it-consultancy-text-video-container">
+                                    
+                                    <div class="it-consultancy-bottom-big-text-section">
+                                        <div><QuestionAnswer
+                                            paraId={12}
+                                            outerDivClass="it-consultancy-strategy-section-row"
+                                            firstParaClass="strategy-section-heading"
+                                            firstParaText="Social Media Management"
+                                            secondParaClass="strategy-section-subtitle"
+                                            secondParaText="Harness the immense potential of social media with our all-inclusive management services. From crafting engaging content to 
 fostering community interactions, we build a dynamic social media presence tailored to your audience."
-                                    />
-                                </div>
-                                <div className="digital-marketing-third-questionAnswer">
-                                    <QuestionAnswer
-                                        paraId={6}
-                                        outerDivClass="web-development-strategy-section-row"
-                                        firstParaClass="strategy-section-heading"
-                                        firstParaText="Pay-Per-Click (PPC) Advertising"
-                                        secondParaClass="strategy-section-subtitle"
-                                        secondParaText="Drive immediate visibility and targeted traffic with our finely-tuned PPC campaigns. We blend creative flair with 
+                                        /></div>    
+                                        <div><QuestionAnswer
+                                            paraId={13}
+                                            outerDivClass="it-consultancy-strategy-section-row"
+                                            firstParaClass="strategy-section-heading"
+                                            firstParaText="Pay-Per-Click (PPC) Advertising"
+                                            secondParaClass="strategy-section-subtitle"
+                                            secondParaText="Drive immediate visibility and targeted traffic with our finely-tuned PPC campaigns. We blend creative flair with 
 data-driven precision to optimize ad spending and maximize ROI."
-                                    />
-                                </div>
-                                <div className="digital-marketing-fourth-questionAnswer">
-                                    <QuestionAnswer
-                                        paraId={7}
-                                        outerDivClass="web-development-strategy-section-row"
-                                        firstParaClass="strategy-section-heading"
-                                        firstParaText="Email Marketing Campaigns"
-                                        secondParaClass="strategy-section-subtitle"
-                                        secondParaText="Engage your audience with our sophisticated email marketing initiatives. Our approach includes personalized 
+                                        /></div>   
+                                        <div><QuestionAnswer
+                                            paraId={14}
+                                            outerDivClass="it-consultancy-strategy-section-row"
+                                            firstParaClass="strategy-section-heading"
+                                            firstParaText="Email Marketing Campaigns"
+                                            secondParaClass="strategy-section-subtitle"
+                                            secondParaText="Engage your audience with our sophisticated email marketing initiatives. Our approach includes personalized 
 newsletters and automated campaigns, ensuring timely and relevant communication with your audience."
-                                    />
-                                </div>
-                                <div className="digital-marketing-fifth-questionAnswer">
-                                    <QuestionAnswer
-                                        paraId={8}
-                                        outerDivClass="web-development-strategy-section-row"
-                                        firstParaClass="strategy-section-heading"
-                                        firstParaText="Analytics and Reporting"
-                                        secondParaClass="strategy-section-subtitle"
-                                        secondParaText="Gain valuable insights with our comprehensive analytics and reporting. We offer transparent 
+                                        /></div>  
+                                        <div><QuestionAnswer
+                                            paraId={15}
+                                            outerDivClass="it-consultancy-strategy-section-row"
+                                            firstParaClass="strategy-section-heading"
+                                            firstParaText="Analytics and Reporting"
+                                            secondParaClass="strategy-section-subtitle"
+                                            secondParaText="Gain valuable insights with our comprehensive analytics and reporting. We offer transparent 
 analysis of your campaigns' performance, enabling informed decision-making and continuous 
 strategy refinement."
-                                    />
+                                        /></div> 
+                                           
+                                    </div>  
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
+                                        <img src={DigitalMarketingImg2} />
+                                    </div>                                  
                                 </div>
-                                <div className="digital-marketing-sixth-questionAnswer">
-                                    <QuestionAnswer
-                                        paraId={9}
-                                        outerDivClass="web-development-strategy-section-row"
-                                        firstParaClass="strategy-section-heading"
-                                        firstParaText="Content Marketing"
-                                        secondParaClass="strategy-section-subtitle"
-                                        secondParaText="We create and distribute engaging, relevant content to captivate your target audience. 
+                               <div>
+                               <QuestionAnswer
+                                    paraId={16}
+                                    outerDivClass="it-consultancy-strategy-section-row"
+                                    firstParaClass="strategy-section-heading"
+                                    firstParaText="Content Marketing"
+                                    secondParaClass="strategy-section-subtitle"
+                                    secondParaText="We create and distribute engaging, relevant content to captivate your target audience. 
 Our offerings include blog posts, videos, infographics, eBooks, and more tailored to 
 your brand's voice and audience's interests."
-                                    />
-                                </div>
-                                <div className="digital-marketing-sixth-questionAnswer">
+                                />
+                               </div>
+                            </div>
+                                <div>
                                     <QuestionAnswer
                                         paraId={10}
                                         outerDivClass="web-development-strategy-section-row"
@@ -104,7 +109,7 @@ to your website with a cost-effective approach where you pay per ad click."
 
                             </div>
                        </div>
-                <div className="digital-marketing-full-width-video-section">
+                <div className="digital-marketing-full-width-video-section section-zoomIn">
                     <img src={DigitalMarketingImg} />
 
                 </div>

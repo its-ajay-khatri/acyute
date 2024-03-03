@@ -23,7 +23,7 @@ const WebDesign = () => {
     return(
         <>
             <div className="networking-main-container">
-            <TopVideoSection videoUrlLoop={NetworkingBanner} videoUrl={NetworkingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
+            <TopVideoSection bannerVideoHeadingText="Networking" videoUrlLoop={NetworkingBanner} videoUrl={NetworkingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { 
                     !showMenuPopup &&
                     <>
