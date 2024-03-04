@@ -344,4 +344,25 @@ p.strategy-section-subtitle {
       display: block;
     }
   }
+
+  .it-consulting-main-container .top-video-page-video-section video {
+    padding: 0em 7em;
+  }
   
+  @media screen and (min-width:1024px) and (max-width:1299px) {
+    .it-consulting-main-container .top-video-page-video-section video {
+      padding: 0em 5em;
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:1023px) {
+    .it-consulting-main-container .top-video-page-video-section video {
+        padding: 0em 5em;
+    }
+  }
+  
+  @media screen and (max-width:767px) {
+    .it-consulting-main-container .top-video-page-video-section video {
+        padding: 0em;
+    }
+  }

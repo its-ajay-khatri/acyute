@@ -19,9 +19,16 @@ const WebDesign = () => {
         setShowMenuPopup(false);
     }, [])
 
+    useEffect(() => {
+        const section = document.getElementById('web-design-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
+
     return(
         <>
-            <div className="web-design-main-container">
+            <div className="web-design-main-container" id="web-design-header-id-section">
             <TopVideoSection bannerVideoHeadingText="Web Development" videoUrlLoop={WebDesignBanner} videoUrl={WebDesignBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { 
                     !showMenuPopup &&
@@ -29,7 +36,7 @@ const WebDesign = () => {
                     <TextCenterNoNBold paraId={1} centerTextClass="web-design-welcome-text-section" centerText="Acyute's IT consulting services offer expert guidance in planning, developing, and 
                             optimizing information technology systems and infrastructure. Tailored to align 
                             IT strategies with business objectives, our services ensure the efficient and effective 
-                            utilization of technology. Here's how we deliver excellence in IT consulting" />
+                            utilization of technology. Here's how we deliver excellence in IT consulting." />
                         
                         <div className="web-design-strategy-section-container">
                             <div className="web-design-text-video-section">
@@ -69,7 +76,7 @@ const WebDesign = () => {
                                                 firstParaClass="strategy-section-heading"
                                                 firstParaText="Enhanced Visibility"
                                                 secondParaClass="strategy-section-subtitle"
-                                                secondParaText="Through modern SEO tactics, we boost your website's visibility and ranking on search engines"
+                                                secondParaText="Through modern SEO tactics, we boost your website's visibility and ranking on search engines."
                                             /></div>
                                             <div><QuestionAnswer
                                                 paraId={7}
@@ -77,7 +84,7 @@ const WebDesign = () => {
                                                 firstParaClass="strategy-section-heading"
                                                 firstParaText="Robust Security"
                                                 secondParaClass="strategy-section-subtitle"
-                                                secondParaText="We safeguard websites with SSL certificates and security best practices to prevent cyber threats"
+                                                secondParaText="We safeguard websites with SSL certificates and security best practices to prevent cyber threats."
                                             /></div>
                                                    
                                         </div>  
@@ -111,7 +118,7 @@ const WebDesign = () => {
                                                 firstParaClass="strategy-section-heading"
                                                 firstParaText="Inclusive Accessibility"
                                                 secondParaClass="strategy-section-subtitle"
-                                                secondParaText="Our adherence to WCAG standards makes our websites accessible to all users, including those with disabilities"
+                                                secondParaText="Our adherence to WCAG standards makes our websites accessible to all users, including those with disabilities."
                                             /></div>
 
                                             <div><QuestionAnswer

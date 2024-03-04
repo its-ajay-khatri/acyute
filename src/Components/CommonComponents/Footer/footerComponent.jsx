@@ -23,9 +23,11 @@ const FooterComponent = () => {
                         <img src={FooterLogo} />
                     </div>
                     <div className="footer-contact-us-section">
-                        <p>Toronto</p>
-                        <Link to="tel:+1 4376065851">+14376065851</Link>
-                        <Link to="mailto:contact@acyute.com">contact@acyute.com</Link>
+                       <div className="footer-top-right-section">
+                            <p>Toronto</p>
+                            <Link className="footer-telephone-class" to="tel:+1 4376065851">+1 (437)-606-5851</Link>
+                            <Link to="mailto:contact@acyute.com">contact@acyute.com</Link>
+                       </div>
                     </div>
                 </div>
                 <div className="footer-container">
@@ -43,8 +45,8 @@ const FooterComponent = () => {
                         </div>
                         <div className="footer-privacy-policy-section">
                             <Link to="/contact">Contact us</Link>
-                            <Link to="/contact">Join the team</Link>
-                            <Link to="#">Web terms and conditions</Link>
+                            {/* <Link to="/contact">Join the team</Link> */}
+                            <Link to="#">Terms and Conditions</Link>
                             <Link to="#">Privacy policy</Link>
                         </div>
                     </div>

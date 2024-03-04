@@ -31,13 +31,17 @@
 }
 
 .footer-logo-section{
-    width: 45%;
+    width: 33%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 } 
 
-.footer-contact-us-section{
-    width: 30%;
-    box-sizing: border-box;
+.footer-contact-us-section {
+  width: 33%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .footer-contact-us-section p{
@@ -96,8 +100,10 @@
     padding: 20px;
 }
 
-.footer-copyright-section{
-    font-size: 1.1em;
+.footer-copyright-section {
+  font-size: 1.1em;
+  justify-content: center;
+  display: flex;
 }
 
 .footer-privacy-policy-section a{
@@ -106,7 +112,7 @@
 }
 
 .footer-logo-section img {
-  width: 350px;
+  width: 400px;
   height: 100px;
 }
 
@@ -123,37 +129,41 @@
 }
 
 .icon-white-bg-black {
-  color: white;
-  background-color: black;
+  /* color: white; */
+  /* background-color: black; */
   font-size: 2em;
   margin: 0 10px;
-}
+} 
 
 .icon-blue-bg-white {
-  color: white;
-  background-color: #1877f2; /* Facebook blue */
+  /* color: white; */
+  /* background-color: #1877f2; */
   font-size: 2em;
   margin: 0 10px;
 }
 
 .icon-instagram {
-  color: #e4405f; /* Instagram color */
+  /* color: #e4405f;  */
   font-size: 2em;
   margin: 0 10px;
 }
 
 .icon-gmail {
-  color: white;
-  background-color: #ea4335; /* Gmail red */
+  /* color: white; */
+  /* background-color: #ea4335; */
   font-size: 2em;
   margin: 0 10px;
 }
 
 .icon-white-bg-blue {
-  color: #ffffff;
-  background-color: #0077b5; /* LinkedIn blue */
+  /* color: #ffffff; */
+  /* background-color: #0077b */
   font-size: 2em;
   margin: 0 10px;
+} 
+
+.footer-telephone-class{
+  display: inline !important;
 }
 
 @media screen and (min-width:900px) and (min-width:1050px) {
@@ -280,7 +290,12 @@ p.banner-section-sub-title.section-lineDown {
 }
 
 .footer-find-us-section {
-  width: 20%;
-  margin-right: 14%;
+  width: 33%;
+  /* margin-right: 14%; */
 }
+}
+
+.social-media-section-inner {
+  justify-content: center;
+  display: flex;
 }

@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import { MyContext } from "../../App";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
 import './digitalmarketing.css';
@@ -14,15 +14,22 @@ import DigitalMarketingImg2 from '../../assets/images/software-development/Softw
 
 const DigitalMarketing = () => {
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
+
+    useEffect(() => {
+        const section = document.getElementById('digital-marketing-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
     return(
         <>
-            <div className="digital-marketing-main-outer-container">
+            <div className="digital-marketing-main-outer-container" id="digital-marketing-header-id-section">
             <TopVideoSection bannerVideoHeadingText="Digital Marketing" videoUrlLoop={DigitalMarketingBanner} videoUrl={DigitalMarketingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 <div>
                     <TextCenterNoNBold paraId={3} centerTextClass="text-center-non-bold" centerText="Acyute's digital marketing services encompass various strategies and tactics tailored to 
                         promote products, services, and brands through various digital channels. Our expertise 
                         is pivotal for businesses that enhance online engagement, increase market presence, 
-                        and drive sales. Here's a breakdown of our critical digital marketing services" />
+                        and drive sales. Here's a breakdown of our critical digital marketing services." />
                 </div>
                         <div className="db-management-middle-section">
                             <div className="it-consultancy-strategy-section-row">

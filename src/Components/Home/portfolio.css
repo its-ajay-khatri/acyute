@@ -89,7 +89,7 @@
     font-size: 5vw;
     font-family: ptsans-bold;
     color: #ce2312;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: opacity 0.3s, transform 0.3s;
     will-change: opacity, transform;
   }
@@ -194,26 +194,32 @@
     &.cont-1 {
       background: url('../../assets//images/home-images//software-development-home.jpeg') 50% 50% no-repeat fixed;
       background-size: cover;
+      opacity: 0.7;
     }
     &.cont-2 {
       background: url('../../assets//images/home-images//db-management-home.jpeg') 50% 50% no-repeat fixed;
       background-size: cover;
+      opacity: 0.7;
     }
     &.cont-3 {
       background: url('../../assets//images/home-images//it-consulting-home.jpeg') 50% 50% no-repeat fixed;
       background-size: cover;
+      opacity: 0.7;
     }
     &.cont-4 {
       background: url('../../assets//images/home-images//networking-home.jpeg') 50% 50% no-repeat fixed;
       background-size: cover;
+      opacity: 0.7;
     }
     &.cont-5 {
       background: url('../../assets//images/home-images//web-design-home.jpeg') 50% 50% no-repeat fixed;
       background-size: cover;
+      opacity: 0.7;
     }
     &.cont-6 {
       background: url('../../assets//images/home-images//digital-marketing-home.jpeg') 50% 50% no-repeat fixed;
       background-size: cover;
+      opacity: 0.7;
     }
     
     /* @for $i from 2 through 10 {
@@ -253,6 +259,7 @@
       .content-text {
         transform: scale(1);
         opacity: 1;
+        line-height: 1.1;
       }
       
       .close {
@@ -308,18 +315,49 @@
   @media screen and (max-width:767px) {
     .scene {
       height: 50vh;
+    }
+    .arrow {
+      padding: 14px !important;
+    }
   }
+
+  @media screen and (min-width:768px) and (max-width:1299px) {
+    .scene {
+      height: 90vh;
+    }
+
+    .arrow {
+      padding: 17px !important;
+    }
+  }
+
+  /* .arrow {
+    border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 24px;
+  margin: 0 auto;
+    animation: slideDown 1s linear infinite;
+  } */
+
+  .portfolio-arrow-down-section {
+    animation: slideDown 1s linear infinite;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 87%;
+}
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   }
 
   .arrow {
-    position: relative;
-    width: 0;
-    margin: 0 auto;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid white; /* Change the color as per your preference */
-    animation: slideDown 1s linear infinite;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 20px;
   }
   
   @keyframes slideDown {

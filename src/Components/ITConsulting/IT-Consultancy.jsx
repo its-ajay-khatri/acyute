@@ -20,9 +20,16 @@ const ITConsultancy = () => {
         setShowMenuPopup(false);
     }, []);
 
+    useEffect(() => {
+        const section = document.getElementById('it-consulting-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
+
     return(
         <>
-            <div className="it-consulting-main-container">
+            <div className="it-consulting-main-container" id="it-consulting-header-id-section">
             <TopVideoSection bannerVideoHeadingText="IT Consultancy" videoUrlLoop={ITImageBanner} videoUrl={ITImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
@@ -30,12 +37,12 @@ const ITConsultancy = () => {
                        <TextCenterNoNBold paraId={1} centerTextClass="text-center-non-bold" centerText="Acyute's IT consulting services offer expert guidance in planning, developing, and 
                             optimizing information technology systems and infrastructure. Tailored to align 
                             IT strategies with business objectives, our services ensure the efficient and effective 
-                            utilization of technology. Here's how we deliver excellence in IT consulting" />
+                            utilization of technology. Here's how we deliver excellence in IT consulting." />
                        </div>
                         
                         <div className="it-consultancy-strategy-section-container">
                             <QuestionAnswer paraId={3} outerDivClass="it-consultancy-strategy-section-row" firstParaClass="strategy-section-heading" firstParaText="Strategic IT Planning" secondParaClass="strategy-section-subtitle" secondParaText="Strategic planning is at the heart of our IT consulting services. We collaborate closely with clients, understanding their business objectives, 
-                                    challenges, and growth aspirations to develop comprehensive IT strategies that align with their organizational goals" />
+                                    challenges, and growth aspirations to develop comprehensive IT strategies that align with their organizational goals." />
 
                            <div>
                            <QuestionAnswer
@@ -44,7 +51,7 @@ const ITConsultancy = () => {
                                 firstParaClass="strategy-section-heading"
                                 firstParaText="Technology Optimization"
                                 secondParaClass="strategy-section-subtitle"
-                                secondParaText="We maximize the potential of your technological infrastructure, streamlining processes, implementing cutting-edge solutions, and staying abreast of technological advancements to enhance efficiency and sophistication"
+                                secondParaText="We maximize the potential of your technological infrastructure, streamlining processes, implementing cutting-edge solutions, and staying abreast of technological advancements to enhance efficiency and sophistication."
                             />
                            </div>
 
@@ -56,7 +63,7 @@ const ITConsultancy = () => {
                                 firstParaClass="strategy-section-heading"
                                 firstParaText="Cybersecurity Excellence"
                                 secondParaClass="strategy-section-subtitle"
-                                secondParaText="Our cybersecurity experts adopt a multi-layered approach to protect your digital assets. From risk assessments to robust defence mechanisms, we ensure the security and integrity of your critical information"
+                                secondParaText="Our cybersecurity experts adopt a multi-layered approach to protect your digital assets. From risk assessments to robust defence mechanisms, we ensure the security and integrity of your critical information."
                             />
                                
                                 {/* <div className="fifty-fifty-right-container"> */}
@@ -80,7 +87,7 @@ const ITConsultancy = () => {
                                     secondParaClass="strategy-section-subtitle"
                                     secondParaText="Our services encompass advising on the design, implementation, 
                                         and optimization of IT infrastructure, covering hardware,
-                                        software, and cloud services"
+                                        software, and cloud services."
                                 />
                                
                                 {/* <div className="fifty-fifty-right-container"> */}
@@ -92,7 +99,7 @@ const ITConsultancy = () => {
                                     secondParaClass="strategy-section-subtitle"
                                     secondParaText="We assist in developing strategic IT plans that align with 
                                             business goals, including technology roadmaps, resource 
-                                            planning, and budgeting"
+                                            planning, and budgeting."
                                     />
                                 {/* </div> */}
                             </div>
@@ -108,7 +115,7 @@ const ITConsultancy = () => {
                                             firstParaClass="strategy-section-heading"
                                             firstParaText="Cybersecurity Consulting"
                                             secondParaClass="strategy-section-subtitle"
-                                            secondParaText="We provide expert advice on protecting IT systems and data, including risk assessments, security audits, policy implementation, and incident response planning"
+                                            secondParaText="We provide expert advice on protecting IT systems and data, including risk assessments, security audits, policy implementation, and incident response planning."
                                         /></div>
                                        <div><QuestionAnswer
                                             paraId={10}
@@ -116,7 +123,7 @@ const ITConsultancy = () => {
                                             firstParaClass="strategy-section-heading"
                                             firstParaText="Cloud Computing Consulting"
                                             secondParaClass="strategy-section-subtitle"
-                                            secondParaText="Our team assists in cloud platform migration and optimization, including service selection, architecture design, and resource management"
+                                            secondParaText="Our team assists in cloud platform migration and optimization, including service selection, architecture design, and resource management."
                                         /></div>
 
                                         <div><QuestionAnswer
@@ -125,7 +132,7 @@ const ITConsultancy = () => {
                                             firstParaClass="strategy-section-heading"
                                             firstParaText="Data Management and Analytics"
                                             secondParaClass="strategy-section-subtitle"
-                                            secondParaText="We offer guidance on data governance, storage, and analytics strategies, covering big data solutions, data warehousing, and business intelligence"
+                                            secondParaText="We offer guidance on data governance, storage, and analytics strategies, covering big data solutions, data warehousing, and business intelligence."
                                         /> </div>                                        
                                     </div>                                    
                                 </div>
@@ -183,7 +190,7 @@ const ITConsultancy = () => {
                                     firstParaClass="strategy-section-heading"
                                     firstParaText="Technology Optimization"
                                     secondParaClass="strategy-section-subtitle"
-                                    secondParaText="We maximize the potential of your technological infrastructure, streamlining processes, implementing cutting-edge solutions, and staying abreast of technological advancements to enhance efficiency and sophistication"
+                                    secondParaText="We maximize the potential of your technological infrastructure, streamlining processes, implementing cutting-edge solutions, and staying abreast of technological advancements to enhance efficiency and sophistication."
                                 />
                                </div>
                             </div>
@@ -219,7 +226,7 @@ const ITConsultancy = () => {
                                             firstParaText="IT Outsourcing and Vendor Management"
                                             secondParaClass="strategy-section-subtitle"
                                             secondParaText="We advise on outsourcing strategies and manage relationships 
-                                            with IT service providers and vendors"
+                                            with IT service providers and vendors."
                                         /></div>      
                                     </div>                                    
                                 </div>
@@ -230,7 +237,7 @@ const ITConsultancy = () => {
                             <div className="it-consultancy-bold-section">
                                 <BoldTextCenterSection classNametext="center-text-bold-section" paraId={19} boldText="Acyute's IT consulting services are designed to meet each organization's unique needs and challenges, 
                                 helping them leverage technology for growth, innovation, and a competitive edge. Our services range 
-                                from short-term specific issue advice to long-term partnerships for ongoing IT strategy and management" />
+                                from short-term specific issue advice to long-term partnerships for ongoing IT strategy and management." />
                             </div>
    
                             <div className="it-consultancy-text-with-circle-section">

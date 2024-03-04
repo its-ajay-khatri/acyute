@@ -19,6 +19,13 @@ const ContactForm = () => {
             setDisableLeader(false)
         }, 1100)
     }, [])
+
+    useEffect(() => {
+        const section = document.getElementById('contact-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
     return (
             <>
                  <header className="header splash-container">
@@ -33,28 +40,21 @@ const ContactForm = () => {
                         <div className="header-section-acyute-menu-cancel offset-md-13 col-12 col-md-5">
                             <div className="header__menu">
                             <div className="header__menu-toggler" onClick={() => setShowMenuPopup(!showMenuPopup)}>
-                                <span className="header__menu-text">
-                                <span className="header__menu-inner d-none d-md-block">
-                                    { 
-                                        !showMenuPopup && (
-                                            <>
-                                                <span className="header__menu-open">Menu</span>
-                                                <span className="header__menu-close" onClick={() => setShowMenuPopup(false)}>Close</span>
-                                            </>
-                                        ) 
-                                    }
-                                </span>
-                                </span>
-                                { !showMenuPopup ? (
-                                    <span className="header__menu-icon">
-                                        
-                                    </span>
+                            { 
+                                !showMenuPopup ? (
+                                    <>
+                                    <span className="header__menu-text">
+                                        <span className="header__menu-inner d-md-block">
+                                            <span className="header__menu-open">Menu</span>   
+                                            </span>
+                                        </span>                                    
+                                    </>
                                 ) : (
-                                    <span className="header__menu-icon a">
-                                        
+                                    <span className="header__menu-icon a">                                       
                                         <p className="cross-class-path">x</p>
-                                </span>
-                                ) }
+                                    </span>
+                                )
+                            }
                             </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@ const ContactForm = () => {
                         </div>
                     </div> }
                 { !showMenuPopup &&
-                    <div className='contact-us-outer-container'>
+                    <div className='contact-us-outer-container' id="contact-header-id-section">
                         <div className='contact-us-contact-heading'>
                             <p>Contact</p>
                         </div>

@@ -18,9 +18,16 @@ const WebDevelopment = () => {
     useEffect(() => {
         setShowMenuPopup(false);
     }, [])
+
+    useEffect(() => {
+        const section = document.getElementById('software-development-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
     return(
         <>
-            <div className="software-development-outer-container">
+            <div className="software-development-outer-container" id="software-development-header-id-section">
             <TopVideoSection bannerVideoHeadingText="Software Development" videoUrlLoop={SoftwareDevelopmentBanner} videoUrl={SoftwareDevelopmentBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
@@ -28,7 +35,7 @@ const WebDevelopment = () => {
                             <TextCenterNoNBold paraId={3} centerTextClass="text-center-non-bold" centerText="Acyute offers comprehensive software development services tailored to innovate, enhance 
                                 efficiency, and provide a competitive edge for businesses and organizations. Our approach 
                                 integrates strategic planning, bespoke solutions, and modern methodologies to meet the 
-                                unique requirements of each project"  />
+                                unique requirements of each project."  />
                         </div>
                              <div className="web-development-strategy-section-container">
                                 <QuestionAnswer
@@ -45,7 +52,7 @@ const WebDevelopment = () => {
                                     firstParaClass="strategy-section-heading"
                                     firstParaText="Custom Code Craftsmanship"
                                     secondParaClass="strategy-section-subtitle"
-                                    secondParaText="Our team specializes in creating unique software solutions, whether scalable web applications, robust mobile solutions, or complex enterprise software. Our expertise in custom code development ensures optimal performance and adaptability"
+                                    secondParaText="Our team specializes in creating unique software solutions, whether scalable web applications, robust mobile solutions, or complex enterprise software. Our expertise in custom code development ensures optimal performance and adaptability."
                                 />
                                 
                                 
@@ -123,7 +130,7 @@ const WebDevelopment = () => {
                                                 firstParaClass="strategy-section-heading"
                                                 firstParaText="Software Consulting"
                                                 secondParaClass="strategy-section-subtitle"
-                                                secondParaText="Our expert consulting services guide you through software strategy, architecture, technology selection, and process optimization"
+                                                secondParaText="Our expert consulting services guide you through software strategy, architecture, technology selection, and process optimization."
                                             />
                                                   
                                         </div>                                    
@@ -169,7 +176,7 @@ const WebDevelopment = () => {
                                         firstParaClass="strategy-section-heading"
                                         firstParaText="Agile and DevOps Practices"
                                         secondParaClass="strategy-section-subtitle"
-                                        secondParaText="Implementing Agile for iterative development and DevOps practices to unify software development and operations, enhancing efficiency and collaboration"
+                                        secondParaText="Implementing Agile for iterative development and DevOps practices to unify software development and operations, enhancing efficiency and collaboration."
                                     />
                                     </div>
                                 </div>

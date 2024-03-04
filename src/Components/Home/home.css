@@ -1,6 +1,6 @@
 
 body .home-page-outer-container{
-    line-height: 10em ;
+    line-height: 6em ;
     background-color: #0f1011;
 }
 
@@ -109,6 +109,11 @@ color: white;
   height: 100% !important;
 }
 
+.homepage-first-text-with-circle-section a.e-cta.is-inview{
+  width: 300px;
+  height: 300px;
+}
+
 .home-page-main-counter-container .b-sentence {
   padding: 5em 0em;
 }
@@ -121,6 +126,11 @@ color: white;
   height: 100% !important;
 }
 
+.home-bottom-text-with-cicle-section a.e-cta.is-inview{
+  width: 300px;
+  height: 300px;
+}
+
 .home-section-background-image {
     position: absolute;
     top: 0;
@@ -129,7 +139,7 @@ color: white;
     right: 0;
     bottom: 0;
     background-image: url('../../assets//images/header-logo.png'); /* Replace with the path to your background image */
-    /* background-size: contain; */
+    background-size: 400px;
     background-repeat: no-repeat;
     background-position: center;
     animation: rotateHomeBackground 10s linear infinite; /* Adjust duration and other properties as needed */
@@ -261,7 +271,7 @@ color: white;
 }
 
 .home-middle-text-with-circle-section .e-cta__text {
-  font-size: 32px !important;
+  font-size: 30px !important;
   font-weight: 300;
   /* color: #ffffff; */
   font-family: Montserrat;
@@ -613,7 +623,19 @@ color: white;
   }
 
   .home-section-background-image {
-    padding: 8em;
+    padding: 10em;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1299px) {
+    .home-section-background-image {
+      padding: 11em;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    .home-section-background-image {
+      padding: 11em;
+    }
   }
 
   .home-middle-text-with-circle-section .row{
@@ -829,7 +851,8 @@ color: white;
 @media screen and (min-width:768px) and (max-width:850px) {
 .home-middle-text-with-circle-section .b-content-button__cta {
     height: 100%;
-    width: 90%;
+    width: 100%;
+    align-items: center;
 }
 .b-content-button .col-md-12.col-xl-11.offset-md-2 {
   margin-left: 1em;

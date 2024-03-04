@@ -17,12 +17,12 @@ html.has-scroll-dragging{
 [data-scroll-direction=horizontal] [data-scroll-container]{
   height:100vh;
   display:inline-block;
-  white-space:nowrap
+  /* white-space:nowrap */
 }
 [data-scroll-direction=horizontal] [data-scroll-section]{
   display:inline-block;
   vertical-align:top;
-  white-space:nowrap;
+  /* white-space:nowrap; */
   height:100%
 }
 .c-scrollbar{
@@ -8174,7 +8174,7 @@ a{
   position:absolute;
   bottom:50px;
   left:50%;
-  white-space:nowrap;
+  /* white-space:nowrap; */
   -webkit-transform:translateX(-50%);
   -o-transform:translateX(-50%);
   transform:translateX(-50%)
@@ -8261,7 +8261,7 @@ a{
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  white-space:nowrap
+  /* white-space:nowrap */
 }
 .t-form__counter-page:not(:first-child){
   position:absolute;

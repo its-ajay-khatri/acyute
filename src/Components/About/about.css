@@ -178,7 +178,7 @@
 }
 
 .about-section-bold-text p{
-  font-size: 46px;
+  font-size: 40px;
   line-height: 1.1;
 }
 
@@ -341,5 +341,27 @@
 @media screen and (max-width:500px) {
   .about-section-text-with-cicle-section .row{
     display: block;
+  }
+}
+
+.about-section-main-container .top-video-page-video-section video {
+  padding: 0em 10em;
+}
+
+@media screen and (min-width:1024px) and (max-width:1399px) {
+  .about-section-main-container .top-video-page-video-section video {
+    padding: 0em 3em;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .about-section-main-container .top-video-page-video-section video {
+      padding: 0em 3em;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .about-section-main-container .top-video-page-video-section video {
+      padding: 0em;
   }
 }

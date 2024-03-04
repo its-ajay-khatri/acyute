@@ -5,7 +5,7 @@
 
 .web-design-welcome-text-section{
     height: 100%;
-    padding: 2em 4em;
+    padding: 2em 3.5em;
     background-color: #0f1011;
     color: white;
     font-family: Montserrat;
@@ -248,5 +248,27 @@
   @media screen and (max-width:500px) {
     .web-design-text-with-circle-section .row{
       display: block;
+    }
+  }
+
+  .web-design-main-container .top-video-page-video-section video {
+    padding: 0em 8em;
+  }
+  
+  @media screen and (min-width:1024px) and (max-width:1299px) {
+    .web-design-main-container .top-video-page-video-section video {
+      padding: 0em 3em;
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:1023px) {
+    .web-design-main-container .top-video-page-video-section video {
+        padding: 0em 3em;
+    }
+  }
+  
+  @media screen and (max-width:767px) {
+    .web-design-main-container .top-video-page-video-section video {
+        padding: 0em;
     }
   }

@@ -43,14 +43,14 @@ const About = () => {
                                 why our team is committed to staying abreast of 
                                 the latest trends and innovations, integrating 
                                 them into solutions that solve today's challenges 
-                                and anticipate tomorrow's needs" />
+                                and anticipate tomorrow's needs." />
                                  <TextLeftNonBold paraId="4" classNameText="technology-text-class" paraText="Our commitment to quality, security, and 
                                 innovation is unwavering. We work tirelessly to 
-                                ensure that each solution we provide meets and 
+                                ensure that each solution we provide mee.ts and 
                                 exceeds your expectations. Partnering with Acyute 
                                 means choosing a path of digital transformation 
                                 led by experts passionate about driving growth 
-                                and success for your business" />
+                                and success for your business." />
                                 <TextLeftNonBold paraId="5" classNameText="technology-text-class" paraText="Join us on this journey of digital excellence. Let 
                                     Acyute be the architect of your digital future, 
                                     where your vision is our blueprint, and your 
@@ -65,7 +65,7 @@ const About = () => {
                         <TextLeftNonBold paraId="7" classNameText="section-lineUp2" paraText="Acyute – Above Expectations, Beyond Boundaries." />
                     </div>
                     <div className="about-section-text-with-cicle-section">
-                        <TextWithCircle paraId="8" leftSectionText="If you've got an idea, feel free to drop by and discuss it with us to discover the ways we can assist you in bringing it to life" CircleLink="contact" CircleText='Contact us' LeaveARequestText="" />   
+                        <TextWithCircle paraId="8" leftSectionText="If you've got an idea, feel free to drop by and discuss it with us to discover the ways we can assist you in bringing it to life." CircleLink="contact" CircleText='Contact us' LeaveARequestText="" />   
                     </div>
                     <FooterComponent />
                 </> }

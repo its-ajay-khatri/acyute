@@ -20,9 +20,16 @@ const WebDesign = () => {
         setShowMenuPopup(false);
     }, [])
 
+    useEffect(() => {
+        const section = document.getElementById('networking-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
+
     return(
         <>
-            <div className="networking-main-container">
+            <div className="networking-main-container" id="networking-header-id-section">
             <TopVideoSection bannerVideoHeadingText="Networking" videoUrlLoop={NetworkingBanner} videoUrl={NetworkingBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { 
                     !showMenuPopup &&

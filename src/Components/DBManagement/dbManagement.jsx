@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useEffect ,useContext} from "react";
 import { MyContext } from "../../App";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
 import './dBmanagement.css'
@@ -16,9 +16,16 @@ const DatabaseMangement = () => {
 
     let { showMenuPopup, setShowMenuPopup } = useContext(MyContext);
 
+    useEffect(() => {
+        const section = document.getElementById('db-management-header-id-section');
+        if (section) {
+        section.scrollIntoView();
+        }
+    }, [])
+
     return(
         <>
-            <div className="db-management-section-main-container">
+            <div className="db-management-section-main-container" id="db-management-header-id-section">
                 <TopVideoSection bannerVideoHeadingText="Database Management" videoUrlLoop={DBImageBanner} videoUrl={DBImageBanner} videoBackgroundColor='#bf0bbf' showMenuPopup={showMenuPopup} setShowMenuPopup={setShowMenuPopup} />
                 { !showMenuPopup &&
                     <>
@@ -26,7 +33,7 @@ const DatabaseMangement = () => {
                        <TextCenterNoNBold paraId={3} centerTextClass="text-center-non-bold" centerText="Acyute's database management services offer solutions focused on efficient database
                             management and organizational utilization. These services are pivotal for maintaining
                             data integrity, security, accessibility, and performance. Here's how we excel in providing
-                            superior database management services" />
+                            superior database management services." />
                        </div>
                        <div className="db-management-middle-section">
                             <div className="it-consultancy-strategy-section-row">
@@ -175,9 +182,9 @@ fix bugs and vulnerabilities."
                                 
                             </div>
                         </div>
-                        <div className="db-management-full-width-video-section">
+                        {/* <div className="db-management-full-width-video-section">
                             <FullWidthVideoSection videoUrlLoop={DBImageBanner} videoUrl={DBImageBanner} />
-                        </div>
+                        </div> */}
                         <div className="db-management-text-bold-section">
                             <BoldTextCenterSection classNametext="center-text-bold-section" paraId={20} boldText="At Acyute, we understand the critical role of databases in modern businesses. By tailoring our services to
                             each organization's specific needs, we ensure your database infrastructure's reliability, security, efficiency,
