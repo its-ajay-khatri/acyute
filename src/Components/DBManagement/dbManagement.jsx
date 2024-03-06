@@ -93,7 +93,7 @@ thorough audits."
                                             /></div>
                              
                                 </div>
-                                <div class="db-management-text-video-right-section section-zoomIn">
+                                <div class="db-management-text-video-right-section section-zoomIn db-management-video-one">
                                     <img src={DatabaseImage1} />
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ storage techniques."
                        </div>
                         <div className="db-management-text-video-section db-management-bottom-section">
                             <div class="db-management-text-video-container">
-                                <div class="db-management-text-video-right-section section-zoomIn">
+                                <div class="db-management-text-video-right-section section-zoomIn db-management-video-two">
                                 <img src={DatabaseImage2} />
                                 </div>
                                 <div class="db-management-bottom-big-text-section">

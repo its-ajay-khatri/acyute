@@ -92,6 +92,7 @@
     /* opacity: 0.7; */
     transition: opacity 0.3s, transform 0.3s;
     will-change: opacity, transform;
+    text-align: center;
   }
   
   .scroll-down {
@@ -341,7 +342,7 @@
   } */
 
   .portfolio-arrow-down-section {
-    animation: slideDown 1s linear infinite;
+    animation: slideDown 2s linear infinite;
     text-align: center;
     position: absolute;
     width: 100%;

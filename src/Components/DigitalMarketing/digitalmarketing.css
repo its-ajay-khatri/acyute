@@ -37,6 +37,10 @@
   padding: 0em;
 }
 
+.digital-marketing-text-wideo-section{
+  padding: 2em 0em 0em 0em !important;
+}
+
 
 
 @media screen and (min-width: 1024px) and (max-width:1299px) {
@@ -279,7 +283,13 @@
     }
   }
 
-  .digital-marketing-main-outer-container .top-video-page-video-section video {
+@media screen and (min-width:768px) {
+  .digital-marketing-image-one{
+    padding-right: 3em;
+  }
+}
+
+  /* .digital-marketing-main-outer-container .top-video-page-video-section video {
     padding: 0em 9em;
   }
   
@@ -299,4 +309,4 @@
     .digital-marketing-main-outer-container .top-video-page-video-section video {
         padding: 0em;
     }
-  }
+  } */

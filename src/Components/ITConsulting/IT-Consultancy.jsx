@@ -34,10 +34,10 @@ const ITConsultancy = () => {
                 { !showMenuPopup &&
                     <>
                        <div>
-                       <TextCenterNoNBold paraId={1} centerTextClass="text-center-non-bold" centerText="Acyute's IT consulting services offer expert guidance in planning, developing, and 
-                            optimizing information technology systems and infrastructure. Tailored to align 
-                            IT strategies with business objectives, our services ensure the efficient and effective 
-                            utilization of technology. Here's how we deliver excellence in IT consulting." />
+                            <TextCenterNoNBold paraId={1} centerTextClass="text-center-non-bold" centerText="Acyute's IT consulting services offer expert guidance in planning, developing, and 
+                                optimizing information technology systems and infrastructure. Tailored to align 
+                                IT strategies with business objectives, our services ensure the efficient and effective 
+                                utilization of technology. Here's how we deliver excellence in IT consulting." />
                        </div>
                         
                         <div className="it-consultancy-strategy-section-container">
@@ -105,7 +105,7 @@ const ITConsultancy = () => {
                             </div>
                             <div className="it-consultancy-text-video-section">
                                 <div class="it-consultancy-text-video-container">
-                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn it-consultancy-first-one-image">
                                         <img src={ITConsultancyImg1} />
                                     </div>
                                     <div class="it-consultancy-bottom-big-text-section">
@@ -179,7 +179,7 @@ const ITConsultancy = () => {
                                         /></div> 
                                            
                                     </div>  
-                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn it-consultancy-second-one-image">
                                         <img src={ITConsultancyImg2} />
                                     </div>                                  
                                 </div>

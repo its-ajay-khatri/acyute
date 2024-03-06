@@ -42,10 +42,10 @@ const DigitalMarketing = () => {
                                     secondParaText="Elevate your online visibility with our expert SEO strategies. We focus on enhancing your website's search engine rankings, driving 
 targeted traffic, and establishing your brand as a leading authority in your industry."
                                 />
-                                <div className="it-consultancy-text-video-section">
+                                <div className="it-consultancy-text-video-section digital-marketing-text-wideo-section">
                                 <div class="it-consultancy-text-video-container">
                                     
-                                    <div class="it-consultancy-bottom-big-text-section">
+                                    <div class="it-consultancy-bottom-big-text-section digital-marketing-image-one">
                                         <div><QuestionAnswer
                                             paraId={12}
                                             outerDivClass="it-consultancy-strategy-section-row"

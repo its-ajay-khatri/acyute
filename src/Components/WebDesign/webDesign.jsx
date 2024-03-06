@@ -88,19 +88,19 @@ const WebDesign = () => {
                                             /></div>
                                                    
                                         </div>  
-                                        <div class="web-design-text-video-right-section section-zoomIn">
+                                        <div class="web-design-text-video-right-section section-zoomIn web-development-first-one">
                                             <img src={WebDesignImge1} />
                                         </div>                                  
                                     </div>
                             </div>
                         </div>
-                        <div className="web-design-video-section section-bounceIn">
+                        {/* <div className="web-design-video-section section-bounceIn">
                             <FullWidthVideoSection videoUrlLoop={HomeImage} videoUrl={HomeImage}/>
-                        </div>
+                        </div> */}
                         <div className="web-design-strategy-section-container">
                             <div className="web-design-text-video-section">
                                     <div class="web-design-text-video-container">
-                                        <div class="web-design-text-video-right-section section-zoomIn">
+                                        <div class="web-design-text-video-right-section section-zoomIn web-development-second-one">
                                         <img src={WebDesignImge2} />
                                         </div>   
                                         <div class="web-design-bottom-big-text-section">

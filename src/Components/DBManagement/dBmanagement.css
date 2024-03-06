@@ -27,7 +27,7 @@
 
   .db-management-text-video-right-section {
     width: 40%;
-    padding: 0em 4em 0em 0em;
+    /* padding: 0em 4em 0em 0em; */
     /* height: 100vh; */
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@
 }
 
 .db-management-text-video-section img{
-  width: 90%;
+  width: 100%;
 }
 
 .db-management-text-bold-section {
@@ -272,4 +272,14 @@
   .db-management-section-main-container .top-video-page-video-section video {
       padding: 0em;
   }
+}
+
+
+@media screen and (min-width:768px) {
+    .db-management-video-one{
+      padding-left: 3em;
+    }
+    .db-management-video-two{
+      padding-right: 3em;
+    }
 }

@@ -4,7 +4,7 @@
 }
 
 .it-consultancy-strategy-section-container{
-    padding: 3em 4em;
+    padding: 3em 7em;
     font-family: Montserrat;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .it-consulting-main-container .it-consultancy-strategy-section-row {
-    padding: 0em 3em;
+    /* padding: 0em 3em; */
     margin: 0;
     line-height: 1.3;
 }
@@ -62,7 +62,7 @@ p.strategy-section-subtitle {
 
 .it-consultancy-text-video-section{
     box-sizing: border-box;
-    padding: 2em 3em 0em 0em;
+    padding: 2em 0em 0em 0em;
     background-color: #0f1011;
     color: white;
     font-family: Montserrat;
@@ -88,8 +88,8 @@ p.strategy-section-subtitle {
 
   .it-consultancy-text-video-right-section {
     width: 40%;
-    padding: 2em;
-    margin-right: 2em;
+    /* padding: 2em; */
+    /* margin-right: 2em; */
     /* height: 100vh; */
     display: flex;
     justify-content: center;
@@ -108,13 +108,17 @@ p.strategy-section-subtitle {
     color: black;
 }
 
+/* .it-consulting-main-container .it-consultancy-fifty-fifty-section{
+  padding: 0em 3em;
+} */
+
 .it-consultancy-bold-section p{
     font-family: Montserrat;
     text-align: left;
 }
 
 .it-consultancy-text-video-section img{
-  width: 90%;
+  width: 100%;
 }
 
 .it-consulting-main-container section.b-content-button.u-margin {
@@ -201,13 +205,13 @@ p.strategy-section-subtitle {
         padding: 1em 1.5em;
     }
 
-    .it-consulting-main-container .it-consultancy-fifty-fifty-section{
+    /* .it-consulting-main-container .it-consultancy-fifty-fifty-section{
         padding: 0em 2em;
-    }
+    } */
 
 
     .it-consultancy-strategy-section-container{
-        padding: 2em 2.5em;
+        padding: 2em 4.5em;
     }
 
     .it-consultancy-text-video-section{
@@ -252,16 +256,16 @@ p.strategy-section-subtitle {
     }
 
     .it-consultancy-strategy-section-container{
-        padding: 2em 1em;
+        padding: 2em 2.5em;
     }
 
     .it-consulting-main-container div#textLeft1 {
         padding: 1em;
     }
 
-    .it-consulting-main-container .it-consultancy-fifty-fifty-section{
+    /* .it-consulting-main-container .it-consultancy-fifty-fifty-section{
         padding: 0em 2em;
-    }
+    } */
 
     /* .it-consultancy-text-video-section{
         padding: 2em 1em 2em 0em;
@@ -345,7 +349,7 @@ p.strategy-section-subtitle {
     }
   }
 
-  .it-consulting-main-container .top-video-page-video-section video {
+  /* .it-consulting-main-container .top-video-page-video-section video {
     padding: 0em 7em;
   }
   
@@ -364,5 +368,21 @@ p.strategy-section-subtitle {
   @media screen and (max-width:767px) {
     .it-consulting-main-container .top-video-page-video-section video {
         padding: 0em;
+    }
+  } */
+
+  
+@media screen and (min-width:768px) {
+  .it-consultancy-bold-section {
+    padding: 0em 3em;
+}
+}
+
+  @media screen and (min-width:768px) {
+    .it-consultancy-second-one-image img{
+      padding-left: 2em;
+    }
+    .it-consultancy-first-one-image img{
+      padding-right: 2em;
     }
   }

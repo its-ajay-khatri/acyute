@@ -78,17 +78,7 @@ infrastructure is always a step ahead."
                                                 secondParaText="Our services extend to the setup and configuration of network hardware and 
 software, optimizing performance from the start."
                                             />
-                                            
-                                                   
-                                        </div>
-                                                                        
-                                    </div>
-                                    <div class="networking-text-video-container">
-                                        <div class="networking-text-video-right-section second-video-section section-zoomIn">
-                                            <img src={NetworkkingImage2} />
-                                        </div>   
-                                        <div class="networking-bottom-big-text-section">
-                                        <QuestionAnswer
+                                             <QuestionAnswer
                                                 paraId={7}
                                                 outerDivClass="networking-strategy-section-row"
                                                 firstParaClass="strategy-section-heading"
@@ -98,6 +88,16 @@ software, optimizing performance from the start."
 needs. This involves selecting suitable hardware and software and crafting an 
 efficient network topology."
                                             />
+                                                   
+                                        </div>
+                                                                        
+                                    </div>
+                                    <div class="networking-text-video-container">
+                                        <div class="networking-text-video-right-section second-video-section section-zoomIn">
+                                            <img src={NetworkkingImage2} />
+                                        </div>   
+                                        <div class="networking-bottom-big-text-section">
+                                       
                                             <QuestionAnswer
                                                 paraId={8}
                                                 outerDivClass="networking-strategy-section-row"
@@ -126,15 +126,7 @@ ensure your network is shielded against cyber threats and unauthorized intrusion
                                                 secondParaText="Our continuous monitoring and management services ensure your network 
 operates efficiently and swiftly resolves any issues."
                                 />
-                                                                                              
-                                        </div>                                                                        
-                                    </div>
-                                    <div class="networking-text-video-container">
-                                        <div class="networking-text-video-right-section section-zoomIn">
-                                            <img src={NetworkkingImage3} />
-                                        </div>   
-                                        <div class="networking-bottom-big-text-section">
-                                        <div><QuestionAnswer
+                                <QuestionAnswer
                                                 paraId={11}
                                                 outerDivClass="networking-strategy-section-row"
                                                 firstParaClass="strategy-section-heading"
@@ -143,7 +135,15 @@ operates efficiently and swiftly resolves any issues."
                                                 secondParaText="We specialize in managing data center network infrastructure, ensuring 
 seamless connectivity and optimized performance for servers, storage, and 
 computing resources."
-                                            /></div>
+                                            />
+                                                                                              
+                                        </div>                                                                        
+                                    </div>
+                                    <div class="networking-text-video-container">
+                                        <div class="networking-text-video-right-section section-zoomIn">
+                                            <img src={NetworkkingImage3} />
+                                        </div>   
+                                        <div class="networking-bottom-big-text-section">
 
                                             <div><QuestionAnswer
                                                 paraId={12}

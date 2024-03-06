@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 const PortfolioSlider = () => {
 
-  const [currentValHolder, setCurrentValueHolder] = useState("Software Develop,ent");
+  const [currentValHolder, setCurrentValueHolder] = useState("Software Development");
+  const [currentValLink, setCurrentValueLink] = useState("software-development");
 
   function useHorizontalScroll() {
     const elRef = useRef();
@@ -31,6 +32,8 @@ const PortfolioSlider = () => {
 
   //useEffect for Scroll JS
   useEffect(() => {
+
+    // console.log("my current scroll score", window.scrollY)
 
     if((window.scrollY >= 3000 && window.scrollY <=3800 && window.innerWidth > 768) || (window.scrollY >= 2400 && window.scrollY <=2800 && window.innerWidth <= 768)){
       $(document).ready(function() {
@@ -66,22 +69,29 @@ const PortfolioSlider = () => {
   
           if (newMargin === 0) {
             setCurrentValueHolder("Digital Marketing")
+            setCurrentValueLink('digital-marketing')
           } else if (newMargin === 100) {
-            setCurrentValueHolder("Web Design")
+            setCurrentValueHolder("Web Development")
+            setCurrentValueLink('web-development')
           }
           else if (newMargin === 200) {
             setCurrentValueHolder("Networking")
+            setCurrentValueLink('networking')
           }
           else if (newMargin === 300) {
             setCurrentValueHolder("IT Consultancy")
+            setCurrentValueLink('it-consultancy')
           }
           else if (newMargin === 400) {
             setCurrentValueHolder("Database Management")
+            setCurrentValueLink('database-management')
           }
           else if (newMargin === 500) {
             setCurrentValueHolder("Software Development")
+            setCurrentValueLink('software-development')
           } else {
             setCurrentValueHolder("Our Services")
+            setCurrentValueLink('services')
           }
           
           setTimeout(function() {
@@ -207,70 +217,81 @@ const PortfolioSlider = () => {
           <div ref={scrollRef} className="portfolio-slider-container">   
             <div>
               <div className="scene your-container">
-                <div className="img-cont left cont-1 service-portlolio-text-section-class" data-helper="0" data-blocks="1"></div>
-                <div className="img-cont right cont-1" data-helper="0" data-blocks="1"></div>
-                <div className="content cont-1">
-                  <Link to='/web-development'> <h2 className="title">Software Development</h2></Link>
-                  <p className="content-text">Acyute offers comprehensive software development services tailored to innovate, enhance 
- efficiency, and provide a competitive edge for businesses and organizations. Our approach 
- integrates strategic planning, bespoke solutions, and modern methodologies to meet the 
- unique requirements of each project.</p>
+                <Link to={`/${currentValLink}`}>
+                  <div className="img-cont left cont-1 service-portlolio-text-section-class" data-helper="0" data-blocks="1"></div>
+                  <div className="img-cont right cont-1" data-helper="0" data-blocks="1"></div>
+                  <div className="content cont-1">
+                    <Link to='/web-development'> <h2 className="title">Software Development</h2></Link>
+                    <p className="content-text">Acyute offers comprehensive software development services tailored to innovate, enhance 
+  efficiency, and provide a competitive edge for businesses and organizations. Our approach 
+  integrates strategic planning, bespoke solutions, and modern methodologies to meet the 
+  unique requirements of each project.</p>
+                    <span className="close">+</span>
+                  </div>
+                </Link>
+                <Link to={`/${currentValLink}`}>
+                  <div className="img-cont left cont-2" data-helper="-1" data-blocks="2"></div>
+                  <div className="img-cont right cont-2" data-helper="1" data-blocks="2"></div>
+                  <div className="content cont-2">
+                  <Link to='/database-management'> <h2 className="title">Database Development</h2></Link>
+                    <p className="content-text">Acyute's database management services offer solutions focused on efficient database
+  management and organizational utilization. These services are pivotal for maintaining
+  data integrity, security, accessibility, and performance. Here's how we excel in providing
+  superior database management services.</p>
                   <span className="close">+</span>
                 </div>
-                <div className="img-cont left cont-2" data-helper="-1" data-blocks="2"></div>
-                <div className="img-cont right cont-2" data-helper="1" data-blocks="2"></div>
-                <div className="content cont-2">
-                <Link to='/database-management'> <h2 className="title">Database Development</h2></Link>
-                  <p className="content-text">Acyute's database management services offer solutions focused on efficient database
- management and organizational utilization. These services are pivotal for maintaining
- data integrity, security, accessibility, and performance. Here's how we excel in providing
- superior database management services.</p>
-                  <span className="close">+</span>
-                </div>
-                <div className="img-cont left cont-3" data-helper="-2" data-blocks="3"></div>
-                <div className="img-cont right cont-3" data-helper="2" data-blocks="3"></div>
-                <div className="content cont-3">
-                <Link to='/it-consultancy'> <h2 className="title">IT Consulting</h2></Link>
-                  <p className="content-text">Acyute's IT consulting services offer expert guidance in planning, developing, and 
- optimizing information technology systems and infrastructure. Tailored to align 
- IT strategies with business objectives, our services ensure the efficient and effective 
- utilization of technology. Here's how we deliver excellence in IT consulting.</p>
-                  <span className="close">+</span>
-                </div>
-                <div className="img-cont left cont-4" data-helper="-3" data-blocks="4"></div>
-                <div className="img-cont right cont-4" data-helper="3" data-blocks="4"></div>
-                <div className="content cont-4">
-                <Link to='/networking'> <h2 className="title">Networking</h2></Link>
-                  <p className="content-text">Acyute's networking services offer a holistic suite of solutions to enhance, maintain, 
-and optimize network infrastructure. Our expertise ensures seamless communication, 
-data transfer, and connectivity, vital for the smooth functioning of businesses. Here's 
-how we provide unparalleled networking services.</p>
-                  <span className="close">+</span>
-                </div>
-                <div className="img-cont left cont-5" data-helper="-4" data-blocks="5"></div>
-                <div className="img-cont right cont-5" data-helper="4" data-blocks="5"></div>
-                <div className="content cont-5">
-                <Link to='/web-design'> <h2 className="title">Web Designing</h2></Link>
-                  <p className="content-text">Acyute's IT consulting services offer expert guidance in planning, developing, and 
- optimizing information technology systems and infrastructure. Tailored to align 
- IT strategies with business objectives, our services ensure the efficient and effective 
- utilization of technology. Here's how we deliver excellence in IT consulting.</p>
-                  <span className="close">+</span>
-                </div>
-                <div className="img-cont left cont-6" data-helper="-5" data-blocks="6"></div>
-                <div className="img-cont right cont-6" data-helper="5" data-blocks="6"></div>
-                <div className="content cont-6">
-                <Link to='/digital-marketing'> <h2 className="title">Digital Marketing</h2></Link>
-                  <p className="content-text">Acyute's digital marketing services encompass various strategies and tactics tailored to 
- promote products, services, and brands through various digital channels. Our expertise 
- is pivotal for businesses that enhance online engagement, increase market presence, 
- and drive sales. Here's a breakdown of our critical digital marketing services.</p>
-                  <span className="close">+</span>
-                </div>
-                
-                <h1 class="heading" style={{color:'white'}}>{currentValHolder}</h1>
-                <div class="pagination">
-                </div>
+                </Link>
+                <Link to={`/${currentValLink}`}>
+                  <div className="img-cont left cont-3" data-helper="-2" data-blocks="3"></div>
+                  <div className="img-cont right cont-3" data-helper="2" data-blocks="3"></div>
+                  <div className="content cont-3">
+                  <Link to='/it-consultancy'> <h2 className="title">IT Consulting</h2></Link>
+                    <p className="content-text">Acyute's IT consulting services offer expert guidance in planning, developing, and 
+  optimizing information technology systems and infrastructure. Tailored to align 
+  IT strategies with business objectives, our services ensure the efficient and effective 
+  utilization of technology. Here's how we deliver excellence in IT consulting.</p>
+                    <span className="close">+</span>
+                  </div>
+                </Link>
+                <Link to={`/${currentValLink}`}>
+                  <div className="img-cont left cont-4" data-helper="-3" data-blocks="4"></div>
+                  <div className="img-cont right cont-4" data-helper="3" data-blocks="4"></div>
+                  <div className="content cont-4">
+                  <Link to='/networking'> <h2 className="title">Networking</h2></Link>
+                    <p className="content-text">Acyute's networking services offer a holistic suite of solutions to enhance, maintain, 
+  and optimize network infrastructure. Our expertise ensures seamless communication, 
+  data transfer, and connectivity, vital for the smooth functioning of businesses. Here's 
+  how we provide unparalleled networking services.</p>
+                    <span className="close">+</span>
+                  </div>
+                </Link>
+                <Link to={`/${currentValLink}`}>
+                  <div className="img-cont left cont-5" data-helper="-4" data-blocks="5"></div>
+                  <div className="img-cont right cont-5" data-helper="4" data-blocks="5"></div>
+                  <div className="content cont-5">
+                  <Link to='/web-design'> <h2 className="title">Web Designing</h2></Link>
+                    <p className="content-text">Acyute's IT consulting services offer expert guidance in planning, developing, and 
+  optimizing information technology systems and infrastructure. Tailored to align 
+  IT strategies with business objectives, our services ensure the efficient and effective 
+  utilization of technology. Here's how we deliver excellence in IT consulting.</p>
+                    <span className="close">+</span>
+                  </div>
+                </Link>
+                <Link to={`/${currentValLink}`}>
+                  <div className="img-cont left cont-6" data-helper="-5" data-blocks="6"></div>
+                  <div className="img-cont right cont-6" data-helper="5" data-blocks="6"></div>
+                  <div className="content cont-6">
+                  <Link to='/digital-marketing'> <h2 className="title">Digital Marketing</h2></Link>
+                    <p className="content-text">Acyute's digital marketing services encompass various strategies and tactics tailored to 
+  promote products, services, and brands through various digital channels. Our expertise 
+  is pivotal for businesses that enhance online engagement, increase market presence, 
+  and drive sales. Here's a breakdown of our critical digital marketing services.</p>
+                    <span className="close">+</span>
+                  </div>
+                </Link>
+                <Link to={`/${currentValLink}`}>
+                  <h1 class="heading" style={{color:'white'}}>{currentValHolder}</h1>
+                </Link>
               </div>
             </div>
            <div className="portfolio-arrow-down-section">

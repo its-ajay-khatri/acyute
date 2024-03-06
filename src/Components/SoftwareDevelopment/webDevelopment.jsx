@@ -87,7 +87,7 @@ const WebDevelopment = () => {
                                             />
                                                 
                                         </div>  
-                                        <div class="web-development-text-video-right-section section-zoomIn">
+                                        <div class="web-development-text-video-right-section section-zoomIn software-dev-image-one">
                                            <img src={SoftwareDevImage1} />
                                         </div>                                  
                                     </div>
@@ -103,7 +103,7 @@ const WebDevelopment = () => {
                                 />
                                 <div className="web-development-text-video-section web-development-video-left-40-text-right-60">
                                     <div class="web-development-text-video-container">
-                                        <div class="web-development-text-video-right-section section-zoomIn">
+                                        <div class="web-development-text-video-right-section section-zoomIn software-dev-image-two">
                                         <img src={SoftwareDevImage2} />
                                         </div>
                                         <div class="web-development-bottom-big-text-section">                                 

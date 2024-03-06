@@ -64,7 +64,7 @@ const Header = ({disableLoadingAnimation, showMenuPopup, setShowMenuPopup}) => {
                                         <span>ABOUT US</span>
                                     </span>
                                  </Link>
-                                 <Link to="/web-design" className="menu__item" style={{pointerEvents:'all'}}>
+                                 <Link to="#" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
                                         <span>OUR PROJECTS</span>
                                     </span>

@@ -73,7 +73,7 @@ const Services = () => {
                                         <span>ABOUT US</span>
                                     </span>
                                  </Link>
-                                 <Link to="/web-design" className="menu__item" style={{pointerEvents:'all'}}>
+                                 <Link to="#" className="menu__item" style={{pointerEvents:'all'}}>
                                     <span className="menu__item-title">
                                         <span>OUR PROJECTS</span>
                                     </span>
@@ -96,7 +96,7 @@ const Services = () => {
                              <div className="services-strategy-section-container">                                
                                 <div className="it-consultancy-fifty-fifty-section">
 
-                                    <Link to='/web-development' className="fifty-fifty-left-container">
+                                    <Link to='/software-development' className="fifty-fifty-left-container">
                                         <div className="fifty-fifty-left-container">
                                             <p className="Service-name-heading">
                                                 Software Development
@@ -111,7 +111,7 @@ const Services = () => {
                                     <Link to='/database-management' className="fifty-fifty-right-container">
                                         <div className="fifty-fifty-left-container">
                                             <p className="Service-name-heading">
-                                                Database Development
+                                                Database Management
                                             </p>
                                             <p className="Service-name-description">
                                                 The Vault of your Digital Assets
@@ -133,7 +133,7 @@ const Services = () => {
                                         </div>
                                     </Link>
 
-                                    <Link to='/web-design' className="fifty-fifty-right-container">
+                                    <Link to='/web-development' className="fifty-fifty-right-container">
                                         <div className="fifty-fifty-left-container">
                                             <p className="Service-name-heading">
                                                 Web Development

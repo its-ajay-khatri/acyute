@@ -17,14 +17,14 @@
     align-items: center;
 }
 
-.fifty-fifty-left-container{
+.services-outer-container .fifty-fifty-left-container{
     padding: 2em 3em;
     box-sizing: border-box;
     width: 100%;
 }
 
-.fifty-fifty-right-container{
-    padding: 0em 0em 1em 2.5em;
+.services-outer-container .fifty-fifty-right-container{
+    padding: 0em 0em 1em 4em;
     box-sizing: border-box;
     width: 100%;
 }
@@ -74,10 +74,10 @@ p.Service-name-description {
         align-items: center;
     }
 
-    .fifty-fifty-left-container p{
+    .services-outer-container .fifty-fifty-left-container p{
         font-size: 30px;
     }
-    .fifty-fifty-left-container{
+    .services-outer-container .fifty-fifty-left-container{
         padding: 1.5em;
     }
 
@@ -93,10 +93,10 @@ p.Service-name-description {
         padding: 1em 2em 3em 2em;
     }
 
-    .fifty-fifty-left-container{
+    .services-outer-container .fifty-fifty-left-container{
         padding: 5px;
     }
-    .fifty-fifty-left-container p{
+    .services-outer-container .fifty-fifty-left-container p{
         font-size: 20px;
     }
 
@@ -123,10 +123,10 @@ p.Service-name-description {
         padding: 1em 2em 3em 2em;
     }
 
-    .fifty-fifty-left-container{
+    .services-outer-container .fifty-fifty-left-container{
         padding: 1em 0em;
     }
-    .fifty-fifty-left-container p{
+    .services-outer-container .fifty-fifty-left-container p{
         font-size: 20px;
     }
 

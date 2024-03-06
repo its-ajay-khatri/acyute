@@ -30,7 +30,7 @@
 }
 
 .networking-text-video-container img{
-    width: 90%;
+    width: 100%;
 }
 
 .networking-bottom-big-text-section {
@@ -52,7 +52,7 @@
 
   .networking-text-video-right-section {
     width: 40%;
-    padding: 2em;
+    padding: 2em 0em;
     margin-right: 2em;
     /* height: 100vh; */
     display: flex;
@@ -307,7 +307,7 @@
     }
   }
 
-  .networking-main-container .top-video-page-video-section video {
+  /* .networking-main-container .top-video-page-video-section video {
     padding: 0em 9em;
   }
   
@@ -327,4 +327,4 @@
     .networking-main-container .top-video-page-video-section video {
         padding: 0em;
     }
-  }
+  } */
