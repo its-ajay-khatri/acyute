@@ -90,3 +90,12 @@
 
     border-radius: 5em;
 }
+
+.banner-image-section {
+    width: 100%;
+}
+
+.banner-image-section img {
+    width: 100%;
+    opacity: 0.7;
+}

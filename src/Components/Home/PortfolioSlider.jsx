@@ -269,7 +269,7 @@ const PortfolioSlider = () => {
                   <div className="img-cont left cont-5" data-helper="-4" data-blocks="5"></div>
                   <div className="img-cont right cont-5" data-helper="4" data-blocks="5"></div>
                   <div className="content cont-5">
-                  <Link to='/web-design'> <h2 className="title">Web Designing</h2></Link>
+                  <Link to='/web-development'> <h2 className="title">Web Designing</h2></Link>
                     <p className="content-text">Acyute's IT consulting services offer expert guidance in planning, developing, and 
   optimizing information technology systems and infrastructure. Tailored to align 
   IT strategies with business objectives, our services ensure the efficient and effective 

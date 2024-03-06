@@ -252,7 +252,7 @@
 }
 
 
-.db-management-section-main-container .top-video-page-video-section video {
+/* .db-management-section-main-container .top-video-page-video-section video {
   padding: 0em 10em;
 }
 
@@ -272,7 +272,7 @@
   .db-management-section-main-container .top-video-page-video-section video {
       padding: 0em;
   }
-}
+} */
 
 
 @media screen and (min-width:768px) {

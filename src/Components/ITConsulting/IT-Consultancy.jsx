@@ -196,7 +196,7 @@ const ITConsultancy = () => {
                             </div>
                             <div className="it-consultancy-text-video-section">
                                 <div class="it-consultancy-text-video-container">
-                                    <div class="it-consultancy-text-video-right-section section-zoomIn">
+                                    <div class="it-consultancy-text-video-right-section section-zoomIn it-consultancy-first-one-image">
                                         <img src={ITConsultancyImg3} />
                                     </div>
                                     <div class="it-consultancy-bottom-big-text-section">

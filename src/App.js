@@ -31,8 +31,8 @@ function App() {
           <Route exact path="/database-management" element={<DatabaseMangement />} />
           <Route exact path="/digital-marketing" element={<DigitalMarketing />} />
           <Route exact path="/networking" element={<Networking />} />
-          <Route exact path="/web-design" element={<WebDesign />} />
-          <Route exact path="/web-development" element={<WebDevelopment />} />
+          <Route exact path="/web-development" element={<WebDesign />} />
+          <Route exact path="/software-development" element={<WebDevelopment />} />
           <Route exact path="/it-consultancy" element={<ITConsultancy />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/contact" element={<ContactForm />} />

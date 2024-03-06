@@ -23,10 +23,12 @@
     width: 100%;
 }
 
-.services-outer-container .fifty-fifty-right-container{
-    padding: 0em 0em 1em 4em;
-    box-sizing: border-box;
-    width: 100%;
+@media screen and (min-width:768px) {
+    .services-outer-container .fifty-fifty-right-container{
+        padding: 0em 0em 1em 4em;
+        box-sizing: border-box;
+        width: 100%;
+    }
 }
 
 .services-strategy-section-container .center-text-bold-section{

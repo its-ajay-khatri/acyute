@@ -4,7 +4,6 @@ import './webDesign.css';
 import TextWithCircle from "../CommonComponents/TextWithCircle/TextWithCircle";
 import FooterComponent from "../CommonComponents/Footer/footerComponent";
 import TopVideoSection from "../CommonComponents/TopVideoSection/TopVideoSection";
-import FullWidthVideoSection from "../FullWidthVideoSection/FullWidthVideoSection";
 import QuestionAnswer from "../CommonComponents/QuestionAnswer/QuestionAnswer";
 import TextCenterNoNBold from "../CommonComponents/TextCenterNonBold/TextCenterNonBold";
 import WebDesignBanner from '../../assets/videos/web-design.mp4'

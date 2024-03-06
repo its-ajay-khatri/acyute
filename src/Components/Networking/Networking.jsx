@@ -11,6 +11,7 @@ import NetworkingBanner from '../../assets/videos/Networking-video.mp4'
 import NetworkkingImage1 from '../../assets/images/networking/networking-1.jpeg'
 import NetworkkingImage2 from '../../assets/images/networking/Networking-2.jpeg'
 import NetworkkingImage3 from '../../assets/images/networking/Networking-3.jpeg'
+import NetworkingImage4 from '../../assets/images/networking/Networking-4.jpeg'
 
 
 const WebDesign = () => {
@@ -187,7 +188,7 @@ a swift resumption during a disaster."
                                     </div>
                                     <div class="networking-text-video-container">
                                         <div class="networking-text-video-right-section section-zoomIn">
-                                            <img src={NetworkkingImage1} />
+                                            <img src={NetworkingImage4} />
                                         </div>   
                                         <div class="networking-bottom-big-text-section">
                                         <QuestionAnswer
