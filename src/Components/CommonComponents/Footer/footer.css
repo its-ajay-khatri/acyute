@@ -6,11 +6,6 @@
     color: #fff;
   }
 
-  .footer-outer-section .footer-find-us-section {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
   
   .footer-about-section {
     height: 20vh;
@@ -37,12 +32,12 @@
     justify-content: center;
 } 
 
-.footer-contact-us-section {
+/* .footer-contact-us-section {
   width: 33%;
   display: flex;
   box-sizing: border-box;
   justify-content: center;
-}
+} */
 
 .footer-contact-us-section p{
     font-size: 1.5em;
@@ -96,9 +91,9 @@
   align-items: center;
 }
 
-.social-media-section-inner a{
+/* .social-media-section-inner a{
     padding: 20px;
-}
+} */
 
 .footer-copyright-section {
   font-size: 1.1em;
@@ -125,7 +120,7 @@
 }
 
 .social-media-section {
-  padding-left: 5em;
+  padding-left: 5%;
 }
 
 .icon-white-bg-black {
@@ -168,7 +163,7 @@
 
 @media screen and (min-width:900px) and (min-width:1050px) {
   .social-media-section {
-    padding-left: 4em;
+    padding-left: 5%;
 }
 }
 
@@ -216,9 +211,9 @@
       text-align: center;
   }
 
-  .social-media-section-inner a {
+  /* .social-media-section-inner a {
       padding: 10px;
-  }
+  } */
 
   .footer-privacy-policy-section a {
       padding: 0.5em;
@@ -251,11 +246,20 @@
   } */
 
   .footer-copyright-section,
-  .social-media-section-inner a,
+  /* .social-media-section-inner a, */
   .footer-privacy-policy-section a {
       padding: 0.5em;
       font-size: 0.9em;
   }
+  .footer-logo-section img{
+    width: 300px;
+    height: 70px;
+  }
+}
+
+.social-media-section-inner img {
+  /* margin: 0px 5px; */
+  margin-right: 15px;
 }
 
 @media screen and (max-width:767px) {
@@ -298,4 +302,36 @@ p.banner-section-sub-title.section-lineDown {
 .social-media-section-inner {
   justify-content: center;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-find-us-section {
+    margin-left: 5%;
+    width: 28%;
+  }
+
+  .footer-contact-us-section {
+    width: 26%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: right;
+    text-align: right;
+  }
+
+  .social-media-section-inner {
+  justify-content: start;
+}
+
+  .footer-top-right-section {
+    width: 100%;
+  }
+
+  .footer-copyright-section {
+    justify-content: start;
+  }
+
+  .footer-privacy-policy-section{
+    justify-content: end;
+    margin-right: 7%;
+  }
 }

@@ -10,6 +10,8 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import faceBookIcon from '../../../assets/images/footer-images/icons8-facebook-100.png'
+import twitterIcon from '../../../assets/images/footer-images/icons8-twitterx-100.png'
 
 const FooterComponent = () => {
     return(
@@ -26,18 +28,20 @@ const FooterComponent = () => {
                        <div className="footer-top-right-section">
                             <p>Toronto</p>
                             <Link className="footer-telephone-class" to="tel:+1 4376065851">+1 (437)-606-5851</Link>
-                            <Link to="mailto:contact@acyute.com">contact@acyute.com</Link>
+                            <div>
+                            <Link className="footer-telephone-class" to="mailto:contact@acyute.com">contact@acyute.com</Link>
+                            </div>
                        </div>
                     </div>
                 </div>
                 <div className="footer-container">
                         <div className="social-media-section">
                             <div className="social-media-section-inner">
-                            <FontAwesomeIcon icon={faTimes} className="icon-white-bg-black" />
-                            <FontAwesomeIcon icon={faFacebook} className="icon-blue-bg-white" />
-                            <FontAwesomeIcon icon={faInstagram} className="icon-instagram" />
-                            {/* <FontAwesomeIcon icon={faEnvelope} className="icon-gmail" /> */}
-                            <FontAwesomeIcon icon={faLinkedin} className="icon-white-bg-blue" />
+                            <Link to="#"><img width={35} height={35} src={twitterIcon} /></Link>
+                            <Link to="#"><img width={35} height={35} src={faceBookIcon} /></Link>
+                            <Link to="#"><FontAwesomeIcon icon={faInstagram} className="icon-instagram" /></Link>
+                            
+                            <Link to="#"><FontAwesomeIcon icon={faLinkedin} className="icon-white-bg-blue" /></Link>
                             </div>
                             <div className="footer-copyright-section">
                                 2024 - Acyute Technologies

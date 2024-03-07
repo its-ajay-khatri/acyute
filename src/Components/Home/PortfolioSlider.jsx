@@ -35,7 +35,7 @@ const PortfolioSlider = () => {
 
     // console.log("my current scroll score", window.scrollY)
 
-    if((window.scrollY >= 3000 && window.scrollY <=3800 && window.innerWidth > 768) || (window.scrollY >= 2400 && window.scrollY <=2800 && window.innerWidth <= 768)){
+    if((window.scrollY >= 3200 && window.scrollY <=3800 && window.innerWidth > 768) || (window.scrollY >= 2400 && window.scrollY <=2800 && window.innerWidth <= 768)){
       $(document).ready(function() {
   
         var scrolling = false,
